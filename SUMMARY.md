@@ -15,5 +15,5 @@
 * [Releases](releases.md)
 * [Integrations](integrations.md)
 * [Libraries](libraries.md)
-* [Untitled](untitled.md)
+* [Smart Contract](untitled.md)
 
