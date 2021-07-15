@@ -3,7 +3,7 @@
 * [Menu](README.md)
 * [Welcome](welcome.md)
 * [Litepaper](litepaper/README.md)
-  * [USA English](litepaper/usa-english.md)
+  * [USA ENGLISH](litepaper/usa-english.md)
 * [System Synopsis](system-synopsis/README.md)
   * [Synopsis](system-synopsis/synopsis.md)
   * [Governance](system-synopsis/governance.md)
