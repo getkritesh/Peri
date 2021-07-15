@@ -10,7 +10,7 @@ Here you will find all the resources you need to build synthetic asset trading, 
 
 Enable users to stake PERI, mint and burn Pynths, and monitor their collateralization levels with the Peri finace Staking system.
 
-**Example:** To see an example of staking in action, visit our live [Staking interface](https://mintr.synthetix.io/). You can view the source code at the Peri Finance Staking interface [Github page](https://github.com/synthetixio/synthetix-mintr).
+**Example:** To see an example of staking in action, visit our live [Staking interface](https://staking.peri.finance/#/). You can view the source code at the Peri Finance Staking interface [Github page](https://github.com/synthetixio/synthetix-mintr).
 
 **Staking Integrations:** For a walkthrough of how to build SNX staking into a dApp, visit the [Staking Integrations](https://docs.synthetix.io/integrations/staking/) section.  
 
