@@ -24,7 +24,7 @@ Enable users to stake PERI, mint and burn Pynths, and monitor their collateraliz
 
 **Support**
 
-**Contact:** You can get technical support from the Peri Finance Discord in the \#tech-support channel.
+**Contact:** You can get technical support from the [Peri Finance Discord](https://discord.com/invite/FF8U8A458j) in the \#tech-support channel.
 
 **FAQs:** For additional support resources, explanations, and links that are perfect for any newcomers, visit our community-built Peri Finance Resources page.  
 
