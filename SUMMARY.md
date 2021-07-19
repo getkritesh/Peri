@@ -10,7 +10,6 @@
   * [Incentives](system-synopsis/incentives.md)
 * [Tokens](tokens/README.md)
   * [Overview](tokens/overview.md)
-  * [List](tokens/list.md)
 * [Addresses](addresses.md)
 * [Releases](releases.md)
 * [Integrations](integrations.md)
