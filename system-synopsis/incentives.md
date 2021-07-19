@@ -30,5 +30,13 @@ PERI stakers stake their PERI and receive three kinds of rewards. But by staking
 
 It is also possible to mint Pynths by staking USDC. However, USDC stakers' debt is denominated in pUSD. It does not get added to the system's pooled debt, and thus does not fluctuate depending on traders' outcomes.The ratio of PERI to USDC will be 8:2, which can be changed by PERI DAO later
 
+#### Traders <a id="traders"></a>
+
+Traders on Peri.Exch ange can take advantage of the system enabled by PERI stakers, namely trading a wide variety of assets with infinite liquidity and no slippage. They do not need to stake or even hold PERI.
+
+#### Arbitrageurs <a id="arbitrageurs"></a>
+
+The primary opportunity for arbitrage in PERI Synthetic is taking advantage of underpriced assets on the secondary market. If pUSD are ever trading below the price of USD respectively, then stakers can profit by purchasing them cheaply and using them within the Peri Finance System, where their values do not take the market rate into consideration.
+
 
 
