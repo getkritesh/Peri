@@ -6,7 +6,7 @@ There are a number a ways to access Peri Finance's historical data in future
 
 * Query PeriFinance event log history and calls using The Graph subgraphs
 * Fetch state at some block in the past using an Archive Node
-* Query event logs directly via the EVM
+* Query event logs 
 * Use a third party service like Google BigQuery or DuneAnalytics
 
 #### The Graph <a id="the-graph"></a>
