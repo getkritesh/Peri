@@ -1,5 +1,9 @@
 # Welcome
 
+
+
+![](.gitbook/assets/peri-logo.svg)
+
 Here you will find all the resources you need to build synthetic asset trading, PERI staking, and Peri Finance protocol data into your project
 
 **Learn More:** To learn about the Peri Finance protocol, read the [Peri Finance](https://staking.peri.finance/file/Peri%20Whitepaper%20%28EN%29%20v0.9.pdf) or visit the System Overview section.
@@ -7,6 +11,8 @@ Here you will find all the resources you need to build synthetic asset trading, 
 **GitHub:** To view Peri Finance codebase, visit the [Peri Finance Github page](https://github.com/perifinance/peri-finance).
 
 ### Build with Peri Finance <a id="build-with-synthetix"></a>
+
+![](.gitbook/assets/integrate_staking.svg)
 
 Enable users to stake PERI, mint and burn Pynths, and monitor their collateralization levels with the Peri finace Staking system.
 
