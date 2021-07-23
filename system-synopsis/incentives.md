@@ -1,3 +1,10 @@
+---
+description: >-
+  Here is an overview of the incentives and token flow in the Peri Fina system.
+  It is built around incentives; users who benefit from a service pay other
+  users who enable that service. This section will
+---
+
 # Incentives
 
 Here is an overview of the incentives and token flow in the Peri Finance system. It is built around incentives; users who benefit from a service pay other users who enable that service. This section will explain each category of rewards as well as each acting party within the system.
