@@ -33,5 +33,7 @@ On a successful transaction, the following events occur:
 | :--- | :--- | :--- | :--- |
 | Issued | ProxysUSD   | msg.sender | \(or user\) amount |
 
-
+| name | emitted on | address account | uint debtRatio | uint debtEntryIndex | uint feePeriodStartingDebtIndex |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| IssuanceDebtRatioEntry | FeePool | msg.sender \(or user\) | debtRatio | debtEntryIndex | feePeriodStartingDebtIndex |
 
