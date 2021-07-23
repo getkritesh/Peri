@@ -1,6 +1,6 @@
 # Staking
 
-## Staking: Open a Position[¶](https://docs.synthetix.io/integrations/staking/#staking-open-a-position) <a id="staking-open-a-position"></a>
+## Staking: Open a Position <a id="staking-open-a-position"></a>
 
 PERI stakers \(aka minting, aka issuing\) lock their PERI into the Peri Finance protocol and take on a debt position \(that is, a percentage\) in the shared pool of the combined USD value of all pynths. Upon staking, they are issued pUSD that represents their current debt position in USD. However, as prices of underlying Pynths fluctuate with oracle updates, the size of the debt pool fluctuates, meaning that the staker's debt decouples from the amount of pUSD that was issued.
 
