@@ -169,7 +169,7 @@ The `PeriFinance`, `FeePool`, and all `Synth` contracts exist behind their own i
 | `ProxyERC20` | A proxy contract which explicitly supports the ERC20 interface. |
 | `Proxyable` | An abstract base contract designed to work with the PeriFinance proxy. |
 
-#### Utilities <a id="utilities"></a>
+### Utilities
 
 These contracts mostly are not deployed on their own, but provide functionality inherited by other contracts already listed.
 

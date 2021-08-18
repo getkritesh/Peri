@@ -27,7 +27,6 @@
 * [Libraries](libraries.md)
 * [Smart Contract](untitled.md)
 * [Smart Contract Architecture](smart-contract-architecture.md)
-* [Automated Testing](automated-testing.md)
 * [Publisher](publisher.md)
 * [Transactions](transactions.md)
 * [Source](source/README.md)
