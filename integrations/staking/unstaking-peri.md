@@ -25,3 +25,15 @@ In order to close their position, PERI stakers need to burn enough pUSD to cover
 
 On a successful transaction, the following events occur:
 
+| name | emitted on | `address from` | `address to` | `uint value` |
+| :--- | :--- | :--- | :--- | :--- |
+| [`Transfer`](https://docs.synthetix.io/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` \(or `user`\) | `0x0` | `amount` of `sUSD` |
+
+| name | emitted on | `address account` | `uint value` |
+| :--- | :--- | :--- | :--- |
+| [`Burned`](https://docs.synthetix.io/contracts/source/contracts/Synth#burned) | `ProxysUSD` | `msg.sender` \(or `user`\) | `amount` |
+
+| name | emitted on | `address account` | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [`IssuanceDebtRatioEntry`](https://docs.synthetix.io/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool` | `msg.sender` \(or `user`\) | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
+

@@ -19,7 +19,7 @@ You can use the `PeriFinance` npm module with the `network` above to get targets
 
 In the interests of dogfooding our own tools, if you require testnet PERI or pUSD, please use our `Depot` contract.
 
-For `kovan` it's https://contracts.synthetix.io/kovan/Depot
+For `kovan` it's https://kovan.etherscan.io/address/0x71afb1b2A9AD48B42D190A844F2eD27B150B496b
 
 To get testnet `ETH`, search for your friendly testnet faucet.
 

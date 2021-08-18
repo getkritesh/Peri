@@ -26,4 +26,13 @@
   * [Virtual Pynths\(vSynths\)](integrations/virtual-pynths.md)
 * [Libraries](libraries.md)
 * [Smart Contract](untitled.md)
+* [Smart Contract Architecture](smart-contract-architecture.md)
+* [Automated Testing](automated-testing.md)
+* [Publisher](publisher.md)
+* [Transactions](transactions.md)
+* [Source](source/README.md)
+  * [Contracts](source/contracts.md)
+  * [Interfaces](source/interfaces.md)
+  * [Libraries](source/libraries.md)
+* [Audit History](audit-history.md)
 
