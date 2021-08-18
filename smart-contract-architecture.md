@@ -69,50 +69,48 @@ Purgeable Pynths also retrieve prices from the oracle at the time of their liqui
 
 #### Fee Pool <a id="fee-pool"></a>
 
-Responsibilities
+#### Responsibilities
 
 * Computes fee entitlements based on the current exchange fee rate and incentive structure, to incentivise users to keep the system operating correctly.
 * Defines the boundaries of recent fee periods, tracking the fees and rewards to be distributed in each one.
 * Allows anyone to roll over to the next fee period once the current one has closed.
-* Accumulates synth exchange fees, holding them as a pool of sUSD.
-* Directs the [`RewardEscrow`](https://docs.synthetix.io/contracts/source/contracts/RewardEscrow/) to escrow inflationary SNX rewards for eligible issuers.
+* Accumulates synth exchange fees, holding them as a pool of pUSD.
+* Directs the `RewardEscrow` to escrow inflationary PERI rewards for eligible issuers.
 * Stores and manages the details of the last several mint/burn events for each account, in order to compute the quantity of fees and rewards they are owed for the past several fee periods. \* Allows issuers \(or their delegated hot wallets\) to claim any fees and rewards owed to them.
 
-Since the collection of exchange fees on synths is mediated through the [`Synthetix.exchange`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/#exchange) function, the fee pool interacts closely with both the [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/) and [`Synth`](https://docs.synthetix.io/contracts/source/contracts/Synth/) contracts.
+The `PeriFinance` contract informs the fee pool when fees are collected, and it is allowed to append historic issuance records to its own account issuance ledger. The fee pool mostly interacts with other system components through `PeriFinance`. For example, it only interacts with the oracle through the PeriFinance contract, in order to issue fees and rewards. It also retrieves other data from there, like debt ledger information, issuance and collateralization ratios, and the addresses of synth contracts.
 
-The [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/) contract informs the fee pool when [fees are collected](https://docs.synthetix.io/contracts/source/contracts/FeePool/#feepaid), and it is allowed to append historic issuance records to its own [account issuance ledger](https://docs.synthetix.io/contracts/source/contracts/FeePoolState/#accountissuanceledger). The fee pool mostly interacts with other system components through [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/). For example, it only interacts with the oracle through the Synthetix contract, in order to issue fees and rewards. It also retrieves other data from there, like debt ledger information, issuance and collateralisation ratios, and the addresses of synth contracts.
-
-As the fee pool is responsible for computing the quantity of both exchange fees and inflationary rewards that issuers are entitled to, it also communicates with the [inflationary supply complex](https://docs.synthetix.io/contracts/#inflationary-supply). In particular, the [`RewardsDistribution`](https://docs.synthetix.io/contracts/source/contracts/RewardsDistribution/) contract is allowed to set the level of inflationary rewards to be distributed through the fee pool, which then disburses them by adding new vesting schedule entries in the [`RewardEscrow`](https://docs.synthetix.io/contracts/source/contracts/RewardEscrow/) contract.
+As the fee pool is responsible for computing the quantity of both exchange fees and inflationary rewards that issuers are entitled to, it also communicates with the inflationary supply complex. In particular, the `RewardsDistribution` contract is allowed to set the level of inflationary rewards to be distributed through the fee pool, which then disburses them by adding new vesting schedule entries in the `RewardEscrow` contract.
 
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
-| [`FeePool`](https://docs.synthetix.io/contracts/source/contracts/FeePool/) | The main contract responsible for computing and storing the level of fees and rewards issuers are entitled to. |
-| [`FeePoolState`](https://docs.synthetix.io/contracts/source/contracts/FeePoolState/) | Stores a limited history of issuance data per user. |
-| [`FeePoolEternalStorage`](https://docs.synthetix.io/contracts/source/contracts/FeePoolEternalStorage/) | Stores fee withdrawal times for each address. |
-| [`DelegateApprovals`](https://docs.synthetix.io/contracts/source/contracts/DelegateApprovals/) | Allows addresses to delegate to others the right to claim fees on their behalf. |
+| `FeePool` | The main contract responsible for computing and storing the level of fees and rewards issuers are entitled to. |
+| `FeePoolState` | Stores a limited history of issuance data per user. |
+| `FeePoolEternalStorage` | Stores fee withdrawal times for each address. |
+| `DelegateApprovals` | Allows addresses to delegate to others the right to claim fees on their behalf. |
 
 #### Inflationary Supply <a id="inflationary-supply"></a>
 
 Responsibilities
 
-* Defines the schedule according to which SNX tokens are generated from the inflationary supply.
+* Defines the schedule according to which PERI tokens are generated from the inflationary supply.
 * Tracks for each year how many inflationary tokens have been minted so far, and how many remain.
 * Distributes inflationary rewards to different recipients in the proportions specified by the protocol; that is for staking versus providing Uniswap liquidity.
 * Holds the minted inflationary rewards in escrow for a year after they are claimed. \* Holds and distributes the escrowed tokens from the original token sale.
 
-The inflationary supply complex is concerned with controlling the flow of new SNX tokens being injected into the market. In this capacity it communicates with the [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/) contract. The actual fraction of the weekly SNX rewards that a particular account is entitled to claim is computed by the [fee pool](https://docs.synthetix.io/contracts/#fee-pool), which is able to direct the [`RewardEscrow`](https://docs.synthetix.io/contracts/source/contracts/RewardEscrow/) and [`RewardsDistribution`](https://docs.synthetix.io/contracts/source/contracts/RewardsDistribution/) contracts as to how they should distribute the new tokens.
+The inflationary supply complex is concerned with controlling the flow of new PERI tokens being injected into the market. In this capacity it communicates with the `PeriFinance` contract. The actual fraction of the weekly SNX rewards that a particular account is entitled to claim is computed by the fee pool, which is able to direct the `RewardEscrow` and `RewardsDistribution` contracts as to how they should distribute the new tokens.
 
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
-| [`SupplySchedule`](https://docs.synthetix.io/contracts/source/contracts/SupplySchedule/) | Determines the rate that inflationary SNX tokens are released. |
-| [`RewardEscrow`](https://docs.synthetix.io/contracts/source/contracts/RewardEscrow/) | Receives inflationary SNX rewards to be distributed after a year escrow. |
-| [`RewardsDistribution`](https://docs.synthetix.io/contracts/source/contracts/RewardsDistribution/) | Apportions designated quantities of inflationary rewards to the [`RewardEscrow`](https://docs.synthetix.io/contracts/source/contracts/RewardEscrow/) contract. |
-| [`SynthetixEscrow`](https://docs.synthetix.io/contracts/source/contracts/SynthetixEscrow/) | Holds the escrowed balances of SNX from the original token sale. |
-| [`EscrowChecker`](https://docs.synthetix.io/contracts/source/contracts/EscrowChecker/) | Augments the [`SynthetixEscrow`](https://docs.synthetix.io/contracts/source/contracts/SynthetixEscrow/) contract with a function for dApps to conveniently query it. |
+| `SupplySchedule` | Determines the rate that inflationary PERI tokens are released. |
+| `RewardEscrow` | Receives inflationary PERI rewards to be distributed after a year escrow. |
+| `RewardsDistribution` | Apportions designated quantities of inflationary rewards to the `RewardEscrow` contract. |
+| `PeriFinanceEscrow` | Holds the escrowed balances of PERI from the original token sale. |
+| `EscrowChecker` | Augments the `PeriFinanceEscrow` contract with a function for dApps to conveniently query it. |
 
 #### Oracle <a id="oracle"></a>
 
@@ -123,53 +121,53 @@ Responsibilities
 * Disables exchange functionality if prices are not fresh.
 * Provides functionality to perform exchange rate conversions between synth flavours.
 
-The on-chain manifestation of the oracle is the [`ExchangeRates`](https://docs.synthetix.io/contracts/source/contracts/ExchangeRates/) contract, whose stored prices it frequently updates. The primary user of these prices is the [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/) contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of synths when performing an exchange of one flavour for another.
+The on-chain manifestation of the oracle is the `ExchangeRates` contract, whose stored prices it frequently updates. The primary user of these prices is the `PeriFinance` contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of synths when performing an exchange of one flavour for another.
 
-It is also used by some other contracts, such as the [`Depot`](https://docs.synthetix.io/contracts/source/contracts/Depot/) and [`PurgeableSynth`](https://docs.synthetix.io/contracts/source/contracts/PurgeableSynth/) contracts.
+It is also used by some other contracts, such as the `Depot` and `PurgeablePynth` contracts.
 
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
-| Oracle | The oracle is responsible for collecting and updating all token prices known to the Synthetix system. Although it is not a contract, it controls a known Ethereum address from which price updates are sent to the [`ExchangeRates`](https://docs.synthetix.io/contracts/source/contracts/ExchangeRates/) contract. |
-| [`ExchangeRates`](https://docs.synthetix.io/contracts/source/contracts/ExchangeRates/) | The Synthetix exchange rates contract which receives token prices from the oracle, and supplies them to all contracts that need it. |
+| Oracle | The oracle is responsible for collecting and updating all token prices known to the PeriFinance system. Although it is not a contract, it controls a known Ethereum address from which price updates are sent to the `ExchangeRates` contract. |
+| `ExchangeRates` | The PeriFinance exchange rates contract which receives token prices from the oracle, and supplies them to all contracts that need it. |
 
 ### Token Circulation <a id="token-circulation"></a>
 
 #### Depot <a id="depot"></a>
 
-The [`Depot`](https://docs.synthetix.io/contracts/source/contracts/Depot/) is a vendor contract that allows users to exchange their ETH for sUSD or SNX, or their sUSD for SNX. It also allows users to deposit Synths to be sold in exchange for ETH.
+The `Depot` is a vendor contract that allows users to exchange their ETH for pUSD or PERI, or their pUSD for PERI. It also allows users to deposit Pynths to be sold in exchange for ETH.
 
-The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming sUSD is priced at one dollar.
+The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming pUSD is priced at one dollar.
 
 ### Infrastructure <a id="infrastructure"></a>
 
-#### AddressResolver <a id="addressresolver"></a>
+### AddressResolver
 
-Responsibilities
+#### Responsibilities
 
-* Tracks the latest instances of all contracts required in the Synthetix system, allowing them to be queried by a `bytes32` name
+* Tracks the latest instances of all contracts required in the PeriFinance system, allowing them to be queried by a `bytes32` name
 
 Each contract which inherits \(or mixes in when considering multiple inheritance\) [`MixinResolver`](https://docs.synthetix.io/contracts/source/contracts/MixinResolver/) will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
 
-#### Proxy <a id="proxy"></a>
+### Proxy
 
-Responsibilities
+#### Responsibilities
 
 * Provides static addresses for contracts where the underlying logic can be upgraded.
 * Provides the interface that allows contracts to operate beneath a proxy.
 
-Each contract which uses a [proxy](https://docs.synthetix.io/contracts/source/contracts/Proxy/) must inherit from [`Proxyable`](https://docs.synthetix.io/contracts/source/contracts/Proxyable/). Function calls are forwarded from the proxy to the proxyable base, while return data and event information travels the other way. Ultimately most contracts should communicate with one another by proxy. See [SIP-16](https://sips.synthetix.io/sips/sip-16) for more discussion.
+Each contract which uses a proxy must inherit from `Proxyable`. Function calls are forwarded from the proxy to the proxyable base, while return data and event information travels the other way. Ultimately most contracts should communicate with one another by proxy
 
-The [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/), [`FeePool`](https://docs.synthetix.io/contracts/source/contracts/FeePool/), and all [`Synth`](https://docs.synthetix.io/contracts/source/contracts/Synth/) contracts exist behind their own individual proxies.
+The `PeriFinance`, `FeePool`, and all `Synth` contracts exist behind their own individual proxies.
 
 **Contracts**
 
 | Contract | Description |
 | :--- | :--- |
-| [`Proxy`](https://docs.synthetix.io/contracts/source/contracts/Proxy/) | The Synthetix proxy contract. |
-| [`ProxyERC20`](https://docs.synthetix.io/contracts/source/contracts/ProxyERC20/) | A proxy contract which explicitly supports the ERC20 interface. |
-| [`Proxyable`](https://docs.synthetix.io/contracts/source/contracts/Proxyable/) | An abstract base contract designed to work with the [Synthetix proxy](https://docs.synthetix.io/contracts/source/contracts/Proxy/). |
+| `Proxy` | The PeriFinance proxy contract. |
+| `ProxyERC20` | A proxy contract which explicitly supports the ERC20 interface. |
+| `Proxyable` | An abstract base contract designed to work with the PeriFinance proxy. |
 
 #### Utilities <a id="utilities"></a>
 
@@ -179,16 +177,16 @@ These contracts mostly are not deployed on their own, but provide functionality 
 
 | Contract | Description |
 | :--- | :--- |
-| [`EternalStorage`](https://docs.synthetix.io/contracts/source/contracts/EternalStorage/) | A persistent/unstructured smart contract storage pattern. |
-| [`ExternStateToken`](https://docs.synthetix.io/contracts/source/contracts/ExternStateToken/) | A partial ERC20 token contact with an external state, which all tokens in Synthetix are built upon. |
-| [`LimitedSetup`](https://docs.synthetix.io/contracts/source/contracts/LimitedSetup/) | A contract which can disable functions a set time after deployment. |
-| [`MixinResolver`](https://docs.synthetix.io/contracts/source/contracts/MixinResolver/) | A mixin to give the inheriter access the [`AddressResolver`](https://docs.synthetix.io/contracts/source/contracts/AddressResolver/) instance. |
-| [`Owned`](https://docs.synthetix.io/contracts/source/contracts/Owned/) | A contract with a distinct owner who can have special privileges. |
-| [`Pausable`](https://docs.synthetix.io/contracts/source/contracts/Pausable/) | A contract whose operations can be paused by its owner. |
-| [`SafeDecimalMath`](https://docs.synthetix.io/contracts/source/libraries/SafeDecimalMath/) | A library for performing fixed point arithmetic at two different precision levels. |
-| [`SelfDestructible`](https://docs.synthetix.io/contracts/source/contracts/SelfDestructible/) | A contract that can be self destructed by its owner after a delay. |
-| [`State`](https://docs.synthetix.io/contracts/source/contracts/State/) | An external state contract which can restrict its fields to be modifiable only by a particular contract address. |
-| [`TokenState`](https://docs.synthetix.io/contracts/source/contracts/TokenState/) | A state contract to be used with [`ExternStateToken`](https://docs.synthetix.io/contracts/source/contracts/ExternStateToken/) to store balances. |
+| `EternalStorage` | A persistent/unstructured smart contract storage pattern. |
+| `ExternStateToken` | A partial ERC20 token contact with an external state, which all tokens in PeriFinance are built upon. |
+| `LimitedSetup` | A contract which can disable functions a set time after deployment. |
+| `MixinResolver` | A mixin to give the inheritor access the `AddressResolver` instance. |
+| `Owned` | A contract with a distinct owner who can have special privileges. |
+| `Pausable` | A contract whose operations can be paused by its owner. |
+| `SafeDecimalMath` | A library for performing fixed point arithmetic at two different precision levels. |
+| `SelfDestructible` | A contract that can be self destructed by its owner after a delay. |
+| `State` | An external state contract which can restrict its fields to be modifiable only by a particular contract address. |
+| `TokenState` | A state contract to be used with `ExternStateToken` to store balances. |
 
 
 
