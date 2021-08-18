@@ -6,3 +6,23 @@ PERI  stakers \(aka minting, aka issuing\) lock their PERI into the Peri Finance
 
 To account for the risk stakers take on by being exposed to a shared debt pool, they are rewarded each week in the form of pUSD trading fees and PERI inflationary rewards .
 
+## Issuance API
+
+### Contract 
+
+**Destination contract \(address\)**: ProxyERC20
+
+**Target contract \(ABI\):** PeriFinance
+
+Note: PeriFinance uses a proxy system. The ABI of the underlying PeriFiance ProxyERC20 contract you need is PeriFiance.
+
+### Methods
+
+issuePynths\(uint256 amount\) 
+
+issuePynthsOnBehalf\(address user, uint256\) 
+
+issueMaxPynths\(\) 
+
+issueMaxPynthsOnBehalf\(address user\)
+
