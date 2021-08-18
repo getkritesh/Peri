@@ -23,7 +23,7 @@
     * [Unstaking PERI](integrations/staking/unstaking-peri.md)
     * [Claiming Rewards](integrations/staking/claiming-rewards.md)
   * [Testnets](integrations/testnets.md)
-  * [Virtual Pynths API](integrations/virtual-pynths.md)
+  * [Virtual Pynths\(vSynths\)](integrations/virtual-pynths.md)
 * [Libraries](libraries.md)
 * [Smart Contract](untitled.md)
 
