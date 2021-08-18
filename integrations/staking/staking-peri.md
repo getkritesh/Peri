@@ -26,3 +26,21 @@ issueMaxPynths\(\)
 
 issueMaxPynthsOnBehalf\(address user\)
 
+
+
+#### Events Emitted <a id="events-emitted"></a>
+
+On a successful transaction, the following events occur:
+
+| name | emitted on | `address from` | `address to` | `uint value` |
+| :--- | :--- | :--- | :--- | :--- |
+| `Transfer` | `ProxypUSD` | `0x0` | `msg.sender` \(or `user`\) | `amount` of `sUSD` |
+
+| name | emitted on | `address account` | `uint value` |
+| :--- | :--- | :--- | :--- |
+| `Issued` | `ProxypUSD` | `msg.sender` \(or `user`\) | `amount` |
+
+| name | emitted on | `address account` | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `IssuanceDebtRatioEntry` | `FeePool` | `msg.sender` \(or `user`\) | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
+
