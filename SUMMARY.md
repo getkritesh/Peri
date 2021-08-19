@@ -11,7 +11,6 @@
 * [Tokens](tokens/README.md)
   * [Overview](tokens/overview.md)
 * [Addresses](addresses.md)
-* [Releases](releases.md)
 * [Integrations](integrations/README.md)
   * [Overview](integrations/overview.md)
   * [Current Integrations](integrations/current-integrations.md)
