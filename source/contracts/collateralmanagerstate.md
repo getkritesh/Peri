@@ -1,0 +1,2 @@
+# CollateralManagerState
+
