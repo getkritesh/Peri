@@ -2,5 +2,5 @@
 
 ### Description <a id="description"></a>
 
-**Source:** contracts/BaseRewardEscrowV2.sol
+**Source:**[ contracts/PeriFinanceBridgeToBase.sol](https://github.com/perifinance/peri-finance/blob/master/contracts/PeriFinanceBridgeToBase.sol\)
 
