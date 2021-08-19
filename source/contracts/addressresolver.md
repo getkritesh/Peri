@@ -10,6 +10,8 @@ This contract is a type of Service Locator pattern that allows for easier intera
 
 #### `repository` <a id="repository"></a>
 
+[Source](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L13)
+
 The mapping of contract name to address
 
 **Type:** `mapping(bytes32 => address)`
@@ -17,6 +19,8 @@ The mapping of contract name to address
 ## Constructor
 
 #### `constructor` <a id="constructor_1"></a>
+
+\*\*\*\*[**Source**](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L15) ****
 
 **Signature**
 
