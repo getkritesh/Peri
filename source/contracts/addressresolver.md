@@ -1,12 +1,12 @@
 # AddressResolver
 
-### Description <a id="description"></a>
+## Description
 
 This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C \(and updating every release\), contract A can refer to an `AddressResolver` and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contract. Thus this ensures that contract A always has the latest B and C contracts.
 
 **Source:** [contracts/AddressResolver.sol](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol)
 
-### Variables <a id="variables"></a>
+## Variables
 
 #### `repository` <a id="repository"></a>
 
@@ -14,7 +14,7 @@ The mapping of contract name to address
 
 **Type:** `mapping(bytes32 => address)`
 
-### Constructor <a id="constructor"></a>
+## Constructor
 
 #### `constructor` <a id="constructor_1"></a>
 
@@ -28,7 +28,7 @@ The mapping of contract name to address
 
 **State Mutability**
 
-### Views <a id="views"></a>
+## Views
 
 #### `areAddressesImported` <a id="areaddressesimported"></a>
 
@@ -86,7 +86,7 @@ Returns Issuer address
 
 * [require\(..., "string calldata"\)](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L55)
 
-### Restricted Functions <a id="restricted-functions"></a>
+## Restricted Functions
 
 #### `importAddresses` <a id="importaddresses"></a>
 
@@ -110,7 +110,7 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 * onlyOwner
 
-### External Functions <a id="external-functions"></a>
+## External Functions
 
 #### `rebuildCaches` <a id="rebuildcaches"></a>
 
@@ -124,7 +124,7 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 **State Mutability**
 
-### Events <a id="events"></a>
+## Events
 
 #### `AddressImported` <a id="addressimported"></a>
 
