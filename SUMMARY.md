@@ -4,7 +4,7 @@
 * [Welcome](welcome.md)
 * [Litepaper](litepaper/README.md)
   * [USA ENGLISH](litepaper/usa-english.md)
-* [System Synopsis](system-synopsis/README.md)
+* [System Overview](system-synopsis/README.md)
   * [Synopsis](system-synopsis/synopsis.md)
   * [Governance](system-synopsis/governance.md)
   * [Incentives](system-synopsis/incentives.md)
