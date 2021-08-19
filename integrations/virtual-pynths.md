@@ -1,4 +1,4 @@
-# Virtual Pynths\(vSynths\)
+# Virtual Pynths\(vPynths\)
 
 There are two steps to Virtual Pynths
 
