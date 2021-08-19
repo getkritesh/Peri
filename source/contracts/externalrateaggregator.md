@@ -2,5 +2,5 @@
 
 ### Description <a id="description"></a>
 
-**Source:** contracts/BaseRewardEscrowV2.sol
+**Source:** [contracts/ExternalRateAggregator.sol](https://github.com/perifinance/peri-finance/blob/master/contracts/ExternalRateAggregator.sol)
 

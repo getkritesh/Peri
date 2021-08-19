@@ -2,5 +2,7 @@
 
 ### Description <a id="description"></a>
 
-**Source:** contracts/BaseRewardEscrowV2.sol
+**Source:** c[ontracts/BridgeState.sol](https://github.com/perifinance/peri-finance/blob/master/contracts/BridgeState.sol)
+
+
 
