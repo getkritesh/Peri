@@ -161,7 +161,6 @@
     * [ITradingRewards](source/interfaces/untitled-59.md)
     * [IVirtualPynth](source/interfaces/untitled-58.md)
   * [Libraries](source/libraries/README.md)
-    * [AddressListLib](source/libraries/addresslistlib.md)
     * [AddressSetLib](source/libraries/addresssetlib.md)
     * [Bytes32SetLib](source/libraries/bytes32setlib.md)
     * [Math](source/libraries/untitled-3.md)
