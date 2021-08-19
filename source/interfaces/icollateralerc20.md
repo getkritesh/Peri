@@ -1,0 +1,2 @@
+# ICollateralErc20
+
