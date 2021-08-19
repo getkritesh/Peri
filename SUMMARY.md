@@ -116,7 +116,7 @@
     * [SystemSettings](source/contracts/untitled-39.md)
     * [SystemStatus](source/contracts/systemstatus.md)
     * [TokenState](source/contracts/tokenstate.md)
-    * [TradingRewards\](source/contracts/tradingrewards.md)
+    * [TradingRewards](source/contracts/tradingrewards.md)
     * [VirtualPynth](source/contracts/virtualpynth.md)
   * [Interfaces](source/interfaces/README.md)
     * [IAddressResolver](source/interfaces/iaddressresolver.md)
