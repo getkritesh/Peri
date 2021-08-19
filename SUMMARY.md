@@ -37,7 +37,7 @@
     * [Bytes32SetLib](source/libraries/bytes32setlib.md)
     * [Math](source/libraries/untitled-3.md)
     * [SafeDecimalMath](source/libraries/untitled-2.md)
-    * [Untitled](source/libraries/untitled-1.md)
-    * [Untitled](source/libraries/untitled.md)
+    * [SafeMath](source/libraries/untitled-1.md)
+    * [VestingEntries](source/libraries/untitled.md)
 * [Audit History](audit-history.md)
 
