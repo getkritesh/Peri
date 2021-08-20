@@ -10,6 +10,7 @@
   * [OVERVIEW](tokens/overview.md)
 * [DEPLOYED CONTRACT](addresses/README.md)
   * [TESTNETS](addresses/testnets/README.md)
+    * [POLYGON TESTNET](addresses/testnets/polygon-testnet.md)
     * [BSC TESTNET](addresses/testnets/bsc-testnet.md)
     * [ETHEREUM KOVAN TESTNET](addresses/testnets/ethereum-kovan-testnet.md)
   * [ETHEREUM MAINNET](addresses/ethereum-market.md)
