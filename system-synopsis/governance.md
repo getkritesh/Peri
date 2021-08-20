@@ -1,4 +1,4 @@
-# Voting and Governance
+# VOTING AND GOVERNANCE
 
 The Peri Finance Protocol has several key governing bodies and artifacts which co-exist to enable the decentralized nature of the Protocol. The key decentralized autonomous organizations \(DAOs\) are the - Spartan Council, Protocol DAO, Peri Finance DAO, Ambassadors DAO and the Grants DAO.
 

@@ -1,2 +1,2 @@
-# Interfaces
+# SOLIDITY INTERFACES
 

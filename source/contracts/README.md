@@ -1,2 +1,2 @@
-# Contracts
+# SOLIDITY CONTRACT
 

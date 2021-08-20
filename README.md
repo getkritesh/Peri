@@ -1,4 +1,4 @@
-# Introduction
+# INTRODUCTION
 
 ## What is Peri Finance ?
 
