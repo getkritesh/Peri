@@ -1,6 +1,6 @@
-# Data
+# PERI FINANCE HISTORICAL DATA
 
-## Historical Data
+## Peri Finance Historical Data
 
 There are a number a ways to access Peri Finance's historical data in future 
 

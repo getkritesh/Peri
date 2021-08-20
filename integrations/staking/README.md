@@ -1,4 +1,4 @@
-# Staking
+# PERI FINACE STAKING
 
 ## Staking: Open a Position <a id="staking-open-a-position"></a>
 

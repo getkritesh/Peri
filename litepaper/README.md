@@ -1,2 +1,2 @@
-# Litepaper
+# Whitepaper
 

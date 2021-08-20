@@ -1,4 +1,4 @@
-# System Overview
+# PROTOCOL GOVERNANCE
 
 ## Synthetic Peri Assets[¶](https://docs.synthetix.io/libraries/synthetix-assets/#synthetix-assets) <a id="synthetix-assets"></a>
 
