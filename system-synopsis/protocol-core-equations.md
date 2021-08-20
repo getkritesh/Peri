@@ -1,6 +1,6 @@
 # PROTOCOL CORE EQUATIONS
 
-Peri Finance using below equations to handle staking and subject to change 
+Peri Finance Protocol using below equations to handle staking and subject to change 
 
 * Staked Amount \(User\)
 * C-Ratio
