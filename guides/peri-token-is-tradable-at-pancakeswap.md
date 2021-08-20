@@ -1,10 +1,8 @@
----
-description: Source
----
-
 # PERI Token is Tradable at PancakeSwap
 
-[![PERI Finance](https://miro.medium.com/fit/c/96/96/1*8823tJq5K3Y0x2MHlm_n9w.jpeg)](https://perifinance.medium.com/?source=post_page-----82e21d678d55--------------------------------)[PERI Finance](https://perifinance.medium.com/?source=post_page-----82e21d678d55--------------------------------)Follow[Aug 4](https://medium.com/perifinance/peri-finance-update-re-open-pancakeswap-pair-chainswap-migration-complete-82e21d678d55?source=post_page-----82e21d678d55--------------------------------) · 2 min read![](https://miro.medium.com/max/1400/1*GQjRQuWwyPpqUxiA12qXWg.jpeg)
+[![PERI Finance](https://miro.medium.com/fit/c/96/96/1*8823tJq5K3Y0x2MHlm_n9w.jpeg)](https://perifinance.medium.com/?source=post_page-----82e21d678d55--------------------------------)PERI FinanceFollow[Aug 4](https://medium.com/perifinance/peri-finance-update-re-open-pancakeswap-pair-chainswap-migration-complete-82e21d678d55?source=post_page-----82e21d678d55--------------------------------) · 2 min read![](https://miro.medium.com/max/1400/1*GQjRQuWwyPpqUxiA12qXWg.jpeg)
+
+[Source](https://medium.com/perifinance/peri-finance-update-re-open-pancakeswap-pair-chainswap-migration-complete-82e21d678d55)
 
 Today, we are delighted to announce that our PERI/BNB trading pair has officially re-opened on Pancakeswap! From now, users are freely trade their PERI tokens on Pancakeswap’s DEX platform.
 
