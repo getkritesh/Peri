@@ -35,8 +35,6 @@ at, `PERI Locked Amount` = \(`debt / issuanceRatio`\) - `USDC Staked Amount`
 
 ## APR <a id="APR"></a>
 
- RW=E⋅RF+E ⋅RI
-
 RW: Weekly Rewards
 
 E: Exchange Rate
@@ -44,6 +42,8 @@ E: Exchange Rate
 RF: fees to distribute\(in single period\)
 
 RI: inflation to distribute\(in single period\)
+
+####  RW=E⋅RF+E ⋅RI
 
 General staking APR,
 
