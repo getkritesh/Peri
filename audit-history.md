@@ -4,8 +4,6 @@ Security and correctness are paramount goals for any smart contract system. Ther
 
 Source - [https://www.certik.org/projects/perifinance](https://www.certik.org/projects/perifinance)
 
-
-
 ## Audits
 
 | Description | Auditor | Audit Type | Date |
