@@ -20,7 +20,7 @@
     * [STAKING PERI](integrations/staking/staking-peri.md)
 * [SMART CONTRACT ARCHITECTURE](smart-contract-architecture.md)
 * [DEPLOYMENT PROCEDURE](publisher.md)
-* [USER FACING TRANSACTIONS](transactions.md)
+* [COMMON TRANSACTIONS](transactions.md)
 * [SOURCE CODE DESCRIPTION](source/README.md)
   * [SOLIDITY CONTRACT](source/contracts/README.md)
     * [AddressResolver](source/contracts/addressresolver.md)

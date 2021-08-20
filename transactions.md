@@ -4,7 +4,7 @@ description: >-
   PeriFinance ecosystem, and the events they emit on success.
 ---
 
-# USER FACING TRANSACTIONS
+# COMMON TRANSACTIONS
 
 ## Staking \(Minting/Issuing\) pUSD
 
