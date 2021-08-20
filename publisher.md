@@ -1,4 +1,4 @@
-# DEPLOYMENT
+# DEPLOYMENT PROCEDURE
 
 This script can `build` \(compile and flatten\), `deploy` and `verify` \(on Etherscan\) the PeriFinance code to a testnet or mainnet.
 
