@@ -15,7 +15,6 @@
   * [BSC MAINNET](addresses/bsc-market.md)
   * [POLYGON MAINNET](addresses/polygon-market.md)
 * [PROTOCOL INTEGRATIONS](integrations/README.md)
-  * [PROTOCOL OVERVIEW](integrations/overview.md)
   * [INTEGRATED PROJECT](integrations/current-integrations.md)
   * [PERI FINANCE HISTORICAL DATA](integrations/data.md)
   * [PERI FINANCE STAKING](integrations/staking/README.md)
