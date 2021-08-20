@@ -1,4 +1,4 @@
-# PROTOCOL GOVERNANCE
+# PROTOCOL RECEPIENTS & REWARDS
 
 ##  <a id="synthetix-assets"></a>
 

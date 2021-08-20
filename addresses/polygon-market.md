@@ -1,8 +1,6 @@
 # POLYGON MAINNET
 
-
-
-Here is the list of all contracts within the current Peri Finance System.
+list of all contracts within the current Peri Finance System.
 
 ### Polygon MAINNET <a id="mainnet"></a>
 
