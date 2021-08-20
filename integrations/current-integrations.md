@@ -1,4 +1,4 @@
-# SUPPORTED INTEGRATIONS
+# INTEGRATED PROJECT
 
 Here is a list of Peri Finance integrations both on and offchain. For projects wishing to integrate with Peri Finance , please see the technical Integrations guide.  
 
