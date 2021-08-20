@@ -4,9 +4,9 @@
 
 The PERI token is an ERC-20 compatible token with the addition of a snapshot feature, allowing gas-less transactions and one transaction approval/transfer.
 
-The source code for the PERI token can be found on [Github here](https://github.com/perifinance/peri-finance). 
+The source code for the PERI token can be found on [Github here](https://github.com/perifinance/peri-finance).  
 
- There are different kinds of tokens used in the Peri Finance ecosystem.
+There are different kinds of tokens used in the Peri Finance ecosystem.
 
 ### PERI
 
