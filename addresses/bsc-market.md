@@ -1,2 +1,2 @@
-# BSC MARKET
+# BSC MAINNET
 

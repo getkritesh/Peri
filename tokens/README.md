@@ -1,2 +1,2 @@
-# PERI TOKEN
+# TOKENOMICS
 

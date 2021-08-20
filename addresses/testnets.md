@@ -1,4 +1,4 @@
-# Testnets
+# TESTNETS
 
 ## Working with Testnets <a id="working-with-testnets"></a>
 
