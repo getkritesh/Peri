@@ -1,4 +1,4 @@
-# SMART CONTRACT ARCHITECTURE
+# DESIGN AND ARCHITECTURE
 
 Here you will find descriptions of the smart contract interfaces of every smart contract in the PeriFinance System. These documents go a bit further than the code does. These documents try to emphasise the reasons behind the architecture, specifically highlighting interactions between system components. The technical aspects of the system are also discussed together with the details of the incentive mechanism, and with links back to governance processes.
 

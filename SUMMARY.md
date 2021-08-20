@@ -22,7 +22,7 @@
   * [PERI FINANCE HISTORICAL DATA](integrations/data.md)
   * [PERI FINANCE STAKING](integrations/staking/README.md)
     * [STAKING PERI](integrations/staking/staking-peri.md)
-* [SMART CONTRACT ARCHITECTURE](smart-contract-architecture.md)
+* [DESIGN AND ARCHITECTURE](smart-contract-architecture.md)
 * [DEPLOYMENT PROCEDURE](publisher.md)
 * [COMMON TRANSACTIONS](transactions.md)
 * [SOURCE CODE DESCRIPTION](source/README.md)
