@@ -171,4 +171,5 @@
   * [Details of APY — PERI Finance dApp](guides/untitled-2.md)
   * [PERI dApp Guide — 4. Earn\(LP Reward\)](guides/untitled.md)
 * [AUDIT HISTORY](audit-history.md)
+* [FAQ](faq.md)
 
