@@ -170,7 +170,7 @@
   * [Launched Staking dApp on Ethereum Mainnet](guides/untitled-3.md)
   * [Details of APY — PERI Finance dApp](guides/untitled-2.md)
   * [PERI dApp Guide — 4. Earn\(LP Reward\)](guides/untitled.md)
-* [AUDIT HISTORY](audit-history.md)
+* [Security & Audits](audit-history.md)
 * [FAQ](faq/README.md)
   * [Frequently Asked Questions](faq/frequently-asked-questions.md)
 
