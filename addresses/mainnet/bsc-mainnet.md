@@ -1,6 +1,6 @@
 # BSC MAINNET
 
-Deployed Peri Finance Smart Contract in BSC Network .
+Peri Finance Staking Dapp Smart Contract in BSC Network .
 
 ### BSC MAINNET <a id="mainnet"></a>
 

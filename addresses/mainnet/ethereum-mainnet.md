@@ -1,6 +1,6 @@
 # ETHEREUM MAINNET
 
-Deployed Peri Finance Smart Contract in Ethereum Network .
+Peri Finance Staking Dapp Smart Contract in Ethereum Mainnet .
 
 ### Ethereum MAINNET <a id="mainnet"></a>
 
