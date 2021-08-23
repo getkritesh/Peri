@@ -29,7 +29,7 @@ Peri Finance smart contract communicates with pynths smart contract to manage th
 
 In order to properly convert between pynths, and to understand value of debt induced by minting tokens, the Peri Finance contract retrieves current token prices from the oracle.  when expanding the supply of PERI, and to distribute the new tokens appropriately this contract  communicates with the inflationary supply complex to mint the correct quantity.
 
-Along with the debt ledger, which is a time series history of the overall value of the PeriFinance  ecosystem, issuance data for the current fee period is updated whenever **p**ynths are issued or burnt. This complex is also responsible for pushing historical issuance information to the fee pool, so that as fee periods roll over, a record of what portion of the total system debt is owned by different issuers is known when computing their fee entitlements.
+Along with the debt ledger, which is a time series history of the overall value of the PeriFinance  ecosystem, issuance data for the current fee period is updated whenever pynths are issued or burnt. This is also responsible for pushing historical issuance information to the fee pool, so that as fee periods roll over, a record of what portion of the total system debt is owned by different issuers is known when computing their fee entitlements.
 
 **Constituent Contracts**
 
