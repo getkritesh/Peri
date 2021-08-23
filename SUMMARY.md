@@ -176,5 +176,5 @@
   * [PERI dApp Guide — 4. Earn\(LP Reward\)](guides/untitled.md)
 * [SECURITY & AUDITS](audit-history.md)
 * [FAQ](faq/README.md)
-  * [Frequently Asked Questions](faq/frequently-asked-questions.md)
+  * [FREQUENTLY ASKED QUESTIONS](faq/frequently-asked-questions.md)
 
