@@ -8,7 +8,9 @@ The Peri Finance system is encapsulated of a number of core contract complexes, 
 
 
 
-The oracle, PeriFinance , pynths, inflationary supply, and fee pool elements comprise the core of the system. The arbitrage and depot contracts are supporting components which, while they do not alter the fundamental behavior of system tokens, ensure the economic health of the system. They do this by making sure that PERI and pynths flow freely through markets like Uniswap, improving liquidity and encouraging prices to be close to their theoretically correct values.
+The oracle, PeriFinance , pynths, inflationary supply, and fee pool elements encapsulated core functionality of Peri Finance system. Supporting Component like arbitrage and depot contracts ensure economic health of the system and does not change the fundamental behavior of system tokens.
+
+They make sure that PERI and pynths flow freely through markets like Uniswap, improving liquidity and encouraging prices to be close to their theoretically correct values.
 
 Each of the elements in this graph may be a complex composed of several contracts, as described below. Some relatively unimportant links have been omitted, but more detailed descriptions are available at the documentation pages for each specific contract.
 
