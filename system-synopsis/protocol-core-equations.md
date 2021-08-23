@@ -37,7 +37,9 @@ at, `PERI Locked Amount` = \(`debt / issuanceRatio`\) - `USDC Staked Amount`
 
 ![](../.gitbook/assets/4.png)
 
-## Fit to Claimable
+## LP Price
 
+![](../.gitbook/assets/5%20%281%29.png)
 
+![](../.gitbook/assets/6%20%281%29.png)
 
