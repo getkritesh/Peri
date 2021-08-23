@@ -2,7 +2,7 @@
 
 * [INTRODUCTION](README.md)
 * [WHITEPAPER](litepaper/README.md)
-  * [USA ENGLISH](litepaper/usa-english.md)
+  * [ENGLISH](litepaper/usa-english.md)
 * [PROTOCOL](system-synopsis/README.md)
   * [VALUE RECEPIENTS](system-synopsis/value-recepients.md)
   * [PERI STAKING REWARDS](system-synopsis/incentives.md)

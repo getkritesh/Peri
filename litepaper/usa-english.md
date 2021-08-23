@@ -1,8 +1,8 @@
 ---
-description: Litepaper
+description: WHITEPAPER
 ---
 
-# USA ENGLISH
+# ENGLISH
 
 
 
