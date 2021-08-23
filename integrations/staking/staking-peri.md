@@ -16,16 +16,21 @@ To consider the risk stakers take on by being exposed to a shared debt pool, the
 
 **Target contract \(ABI\):** PeriFinance
 
-Note: PeriFinance uses a proxy system. The ABI of the underlying PeriFinance ProxyERC20 contract you need is PeriFinance.
+Note: PeriFinance uses a proxy system. The ABI of the underlying PeriFiance ProxyERC20 contract you need is PeriFiance.
 
-#### Methods
+### Methods
 
-* issuePynths\(uint256 amount\) 
-* issuePynthsOnBehalf\(address user, uint256\) 
-* issueMaxPynths\(\)
-* issueMaxPynthsOnBehalf\(address user\)
+issuePynths\(uint256 amount\) 
 
-#### Events Emitted
+issuePynthsOnBehalf\(address user, uint256\) 
+
+issueMaxPynths\(\) 
+
+issueMaxPynthsOnBehalf\(address user\)
+
+
+
+#### Events Emitted <a id="events-emitted"></a>
 
 On a successful transaction, the following events occur:
 
@@ -47,7 +52,7 @@ On a successful transaction, the following events occur:
 
 ## Unstaking: Closing a Position <a id="unstaking-closing-a-position"></a>
 
-In order to close their position, PERI stakers need to burn enough pUSD to cover their debt position 
+In order to close their position, PERI stakers need to burn enough pUSD to cover their debt position \(PeriFinance.debtBalanceof\(user, "pUSD"\)\).
 
 ### Burning API <a id="burning-api"></a>
 
@@ -72,15 +77,15 @@ On a successful transaction, the following events occur:
 
 | name | emitted on | `address from` | `address to` | `uint value` |
 | :--- | :--- | :--- | :--- | :--- |
-| `Transfer` | `ProxypUSD` | `msg.sender` \(or `user`\) | `0x0` | `amount` of `pUSD` |
+| [`Transfer`](https://docs.synthetix.io/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` \(or `user`\) | `0x0` | `amount` of `sUSD` |
 
 | name | emitted on | `address account` | `uint value` |
 | :--- | :--- | :--- | :--- |
-| `Burned` | `ProxypUSD` | `msg.sender` \(or `user`\) | `amount` |
+| [`Burned`](https://docs.synthetix.io/contracts/source/contracts/Synth#burned) | `ProxysUSD` | `msg.sender` \(or `user`\) | `amount` |
 
 | name | emitted on | `address account` | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `IssuanceDebtRatioEntry` | `FeePool` | `msg.sender` \(or `user`\) | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
+| [`IssuanceDebtRatioEntry`](https://docs.synthetix.io/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool` | `msg.sender` \(or `user`\) | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
 
 ## Claiming Rewards
 
@@ -94,10 +99,14 @@ PERI stakers \(aka minters, aka issuers\) get staking rewards each week, in the 
 
 **Underlying contract \(ABI\):** `FeePool`
 
-> #### Methods
+> **Note:** PeriFinance  uses a proxy system. The ABI of the underlying PeriFinance `FeePool` contract you need is `FeePool`. Learn more about how proxies work by visiting the overview page.
+
+#### Methods <a id="methods"></a>
 
 * `claimFees()`
 * `claimOnBehalf(address user)`
+
+\`\`
 
 #### Events Emitted <a id="events-emitted"></a>
 
@@ -117,7 +126,7 @@ On a successful transaction, the following events occur:
 
 | name | emitted on | `address account` | `uint value` |
 | :--- | :--- | :--- | :--- |
-| `Issued` | `ProxypUSD` | `msg.sender` \(or `user`\) | `amount` of `pUSD` |
+| `Issued` | `ProxysUSD` | `msg.sender` \(or `user`\) | `amount` of `pUSD` |
 
 | name | emitted on | `address beneficiary` | `uint time` | `uint value` |
 | :--- | :--- | :--- | :--- | :--- |
