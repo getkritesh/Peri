@@ -130,12 +130,12 @@ The Depot allows users to exchange their pUSD for PERI. The depot has its own de
 
 * Tracks the latest instances of all contracts required in the PeriFinance system, allowing them to be queried by a `bytes32` name
 
-Each contract which inherits \(or mixes in when considering multiple inheritance\) [`MixinResolver`](https://docs.synthetix.io/contracts/source/contracts/MixinResolver/) will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
+Each contract which inherits `MixinResolver` will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
 
 ### Proxy
 
-* Provides static addresses for contracts where the underlying logic can be upgraded.
-* Provides the interface that allows contracts to operate beneath a proxy.
+* Provides a static addresses for contracts where the underlying logic can be upgraded.
+* Provides an interface that allows contracts to operate beneath a proxy.
 
 Each contract which uses a proxy must inherit from `Proxyable`. Function calls are forwarded from the proxy to the proxyable base, while return data and event information travels the other way. Ultimately most contracts should communicate with one another by proxy
 
