@@ -48,14 +48,11 @@ No of instances of the Pynth token contract are deployed, one for each flavour o
 
 Pynths implement their own issuance and burning logic, but only the PeriFinance and fee pool contracts may invoke them. The PeriFinance contract uses these functions for issuance and burning by stakers, while the fee pool uses them to burn fees at the fee address and issue them to the claimers address.
 
-Purgeable Pynths also retrieve prices from the oracle at the time of their liquidation to check if the value of their circulating supply is low enough to liquidate.
-
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
-| `Pynth` | The base ERC20 token contract comprising most of the behaviour of all synths. Each synth has an associated proxy and token state contract. |
-| `PurgeableSynth` | A synth contract that can be liquidated at the end of its life, if its supply is low enough or it is a frozen inverse synth. |
+| `Pynth` | The base ERC20 token contract comprising most of the behaviour of all pynths. Each pynth has an associated proxy and token state contract. |
 
 #### Fee Pool <a id="fee-pool"></a>
 
