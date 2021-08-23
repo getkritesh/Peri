@@ -91,21 +91,30 @@ node publish replace-synths # "--help" for options
 
 Will attempt purge the given synth with all token holders it can find. Uses the list of holders from mainnet, and as such won't do anything for other networks.
 
-#### node publish purge-synths \# "--help" for options
+```text
+# attempt purge the given synth with all token holders
+node publish purge-synths # "--help" for options
+```
 
 ### 8. Release <a id="8-release"></a>
 
 Will initiate the  PeriFinance release process, publishing the PeriFinance `npm` module and updating all dependent projects in GitHub and `npm`.
 
-#### node publish release \# "--help" for options
+```text
+# attempt to initiate the  PeriFinance release process
+node publish release # "--help" for options
+```
 
 ### 9. Staking Rewards <a id="9-staking-rewards"></a>
 
 Will deploy an instance of StakingRewards.sol with the configured stakingToken and rewardsToken in rewards.json. Then `run node publish verify`
 
-#### node publish deploy-staking-rewards \# "--help" for options
+```text
+# attempt to Staking Rewards
+node publish deploy-staking-rewards # "--help" for options
+```
 
-#### Branching <a id="branching"></a>
+#### Branching
 
 For `PeriFinance` repo, we are using the following branch mapping:
 
