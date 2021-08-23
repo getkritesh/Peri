@@ -18,25 +18,23 @@ Each of the elements in this graph may be a complex composed of several contract
 
 ### PeriFinance
 
-*  PERI token Implementation.
-* Tracking Operational pynths.
+* Implements the PERI token.
+* Tracks operational pynths.
 * Issues and burns pynths.
-* Exchanges between pynth flavours.
+* Exchanges between synth flavours.
 * Mints the inflationary supply.
 * Maintains the system debt ledger.
 
-Peri Finance smart contract communicates with pynths smart contract to manage their supply, and also the fee pool to remit fees when there is exchanges occur in pynths. 
+PeriFinance contract communicates with pynths to manage their supply, as well as the fee pool to remit fees when synth exchanges occur. In order to properly convert between pynths, and to understand value of debt induced by minting tokens, the PeriFinance contract retrieves current token prices from the oracle. This contract also communicates with the inflationary supply complex to mint the correct quantity when expanding the supply of PERI, and to distribute the new tokens appropriately.
 
-In order to properly convert between pynths, and to understand value of debt induced by minting tokens, the Peri Finance contract retrieves current token prices from the oracle.  when expanding the supply of PERI, and to distribute the new tokens appropriately this contract  communicates with the inflationary supply complex to mint the correct quantity.
-
-Along with the debt ledger, which is a time series history of the overall value of the PeriFinance  ecosystem, issuance data for the current fee period is updated whenever pynths are issued or burnt. This is also responsible for pushing historical issuance information to the fee pool, so that as fee periods roll over, a record of what portion of the total system debt is owned by different issuers is known when computing their fee entitlements.
+Along with the debt ledger, which is a time series history of the overall value of the PeriFinance  ecosystem, issuance data for the current fee period is updated whenever **p**ynths are issued or burnt. This complex is also responsible for pushing historical issuance information to the fee pool, so that as fee periods roll over, a record of what portion of the total system debt is owned by different issuers is known when computing their fee entitlements.
 
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
 | `PeriFinance` | The main token contract. |
-| `PeriFinanceState` | An auxiliary state contract which tracks current issuer data and the debt ledger. |
+| `PeriFinanceState` | An auxiliary state contract that sits alongside PeriFinance, which tracks current issuer data and the debt ledger. |
 | `Issuer` | An auxiliary helper contract that performs the issuing and burning functionality. |
 | `Exchanger` | An auxiliary helper contract that performs the exchange and settle functionality. |
 
