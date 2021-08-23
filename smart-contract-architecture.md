@@ -122,9 +122,7 @@ It is also used by some other contracts, such as the `Depot` and `PurgeablePynth
 
 #### Depot <a id="depot"></a>
 
-The `Depot` is a vendor contract that allows users to exchange their ETH for pUSD or PERI, or their pUSD for PERI. It also allows users to deposit Pynths to be sold in exchange for ETH.
-
-The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming pUSD is priced at one dollar.
+The Depot allows users to exchange their pUSD for PERI. The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming pUSD is priced at one dollar.
 
 ### Infrastructure <a id="infrastructure"></a>
 
