@@ -9,7 +9,7 @@ description: Peri finance provides below  method to handle staking
    2. Mint
    3. Update debt
    4. Update total supply
-   5. Transfer\(?\)
+   5. Transfer
 2. Burn
    1. Burn
    2. Unlock
