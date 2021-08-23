@@ -72,15 +72,15 @@ On a successful transaction, the following events occur:
 
 | name | emitted on | `address from` | `address to` | `uint value` |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Transfer`](https://docs.synthetix.io/contracts/source/contracts/ExternStateToken#transfer) | `ProxysUSD` | `msg.sender` \(or `user`\) | `0x0` | `amount` of `sUSD` |
+| `Transfer` | `ProxypUSD` | `msg.sender` \(or `user`\) | `0x0` | `amount` of `pUSD` |
 
 | name | emitted on | `address account` | `uint value` |
 | :--- | :--- | :--- | :--- |
-| [`Burned`](https://docs.synthetix.io/contracts/source/contracts/Synth#burned) | `ProxysUSD` | `msg.sender` \(or `user`\) | `amount` |
+| `Burned` | `ProxypUSD` | `msg.sender` \(or `user`\) | `amount` |
 
 | name | emitted on | `address account` | `uint debtRatio` | `uint debtEntryIndex` | `uint feePeriodStartingDebtIndex` |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`IssuanceDebtRatioEntry`](https://docs.synthetix.io/contracts/source/contracts/FeePool#issuancedebtratioentry) | `FeePool` | `msg.sender` \(or `user`\) | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
+| `IssuanceDebtRatioEntry` | `FeePool` | `msg.sender` \(or `user`\) | `debtRatio` | `debtEntryIndex` | `feePeriodStartingDebtIndex` |
 
 ## Claiming Rewards
 
@@ -94,14 +94,10 @@ PERI stakers \(aka minters, aka issuers\) get staking rewards each week, in the 
 
 **Underlying contract \(ABI\):** `FeePool`
 
-> **Note:** PeriFinance  uses a proxy system. The ABI of the underlying PeriFinance `FeePool` contract you need is `FeePool`. Learn more about how proxies work by visiting the overview page.
-
-#### Methods <a id="methods"></a>
+> #### Methods
 
 * `claimFees()`
 * `claimOnBehalf(address user)`
-
-\`\`
 
 #### Events Emitted <a id="events-emitted"></a>
 
@@ -121,7 +117,7 @@ On a successful transaction, the following events occur:
 
 | name | emitted on | `address account` | `uint value` |
 | :--- | :--- | :--- | :--- |
-| `Issued` | `ProxysUSD` | `msg.sender` \(or `user`\) | `amount` of `pUSD` |
+| `Issued` | `ProxypUSD` | `msg.sender` \(or `user`\) | `amount` of `pUSD` |
 
 | name | emitted on | `address beneficiary` | `uint time` | `uint value` |
 | :--- | :--- | :--- | :--- | :--- |
