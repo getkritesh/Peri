@@ -36,7 +36,7 @@ Along with the debt ledger, which is a time series history of the overall value 
 | Contract | Description |
 | :--- | :--- |
 | `PeriFinance` | The main token contract. |
-| `PeriFinanceState` | An auxiliary state contract that sits alongside PeriFinance, which tracks current issuer data and the debt ledger. |
+| `PeriFinanceState` | An auxiliary state contract which tracks current issuer data and the debt ledger. |
 | `Issuer` | An auxiliary helper contract that performs the issuing and burning functionality. |
 | `Exchanger` | An auxiliary helper contract that performs the exchange and settle functionality. |
 
