@@ -116,7 +116,7 @@ It is also used by some other contracts, such as the `Depot` and `PurgeablePynth
 | Contract | Description |
 | :--- | :--- |
 | Oracle | The oracle is responsible for collecting and updating all token prices known to the PeriFinance system. Although it is not a contract, it controls a known Ethereum address from which price updates are sent to the `ExchangeRates` contract. |
-| `ExchangeRates` | The PeriFinance exchange rates contract which receives token prices from the oracle, and supplies them to all contracts that need it. |
+| ExchangeRates | The PeriFinance exchange rates contract which receives token prices from the oracle, and supplies them to all contracts that need it. |
 
 ### Token Circulation <a id="token-circulation"></a>
 
