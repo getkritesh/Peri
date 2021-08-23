@@ -16,21 +16,16 @@ To consider the risk stakers take on by being exposed to a shared debt pool, the
 
 **Target contract \(ABI\):** PeriFinance
 
-Note: PeriFinance uses a proxy system. The ABI of the underlying PeriFiance ProxyERC20 contract you need is PeriFiance.
+Note: PeriFinance uses a proxy system. The ABI of the underlying PeriFinance ProxyERC20 contract you need is PeriFinance.
 
-### Methods
+#### Methods
 
-issuePynths\(uint256 amount\) 
+* issuePynths\(uint256 amount\) 
+* issuePynthsOnBehalf\(address user, uint256\) 
+* issueMaxPynths\(\)
+* issueMaxPynthsOnBehalf\(address user\)
 
-issuePynthsOnBehalf\(address user, uint256\) 
-
-issueMaxPynths\(\) 
-
-issueMaxPynthsOnBehalf\(address user\)
-
-
-
-#### Events Emitted <a id="events-emitted"></a>
+#### Events Emitted
 
 On a successful transaction, the following events occur:
 
