@@ -18,8 +18,6 @@ Each of the elements in this graph may be a complex composed of several contract
 
 ### PeriFinance
 
-Responsibilities
-
 * Implements the PERI token.
 * Tracks operational pynths.
 * Issues and burns pynths.
@@ -42,8 +40,6 @@ Along with the debt ledger, which is a time series history of the overall value 
 
 #### Pynth <a id="synth"></a>
 
-Responsibilities
-
 * Implements all pynth tokens.
 * Liquidates frozen inverse pynths.
 
@@ -61,8 +57,6 @@ Purgeable Pynths also retrieve prices from the oracle at the time of their liqui
 | `PurgeableSynth` | A synth contract that can be liquidated at the end of its life, if its supply is low enough or it is a frozen inverse synth. |
 
 #### Fee Pool <a id="fee-pool"></a>
-
-#### Responsibilities
 
 * Computes fee entitlements based on the current exchange fee rate and incentive structure, to incentivise users to keep the system operating correctly.
 * Defines the boundaries of recent fee periods, tracking the fees and rewards to be distributed in each one.
@@ -86,8 +80,6 @@ As the fee pool is responsible for computing the quantity of both exchange fees 
 
 #### Inflationary Supply <a id="inflationary-supply"></a>
 
-Responsibilities
-
 * Defines the schedule according to which PERI tokens are generated from the inflationary supply.
 * Tracks for each year how many inflationary tokens have been minted so far, and how many remain.
 * Distributes inflationary rewards to different recipients in the proportions specified by the protocol; that is for staking versus providing Uniswap liquidity.
@@ -106,8 +98,6 @@ The inflationary supply complex is concerned with controlling the flow of new PE
 | `EscrowChecker` | Augments the `PeriFinanceEscrow` contract with a function for dApps to conveniently query it. |
 
 #### Oracle <a id="oracle"></a>
-
-Responsibilities
 
 * Updates, stores, and distributes up-to-date token prices relevant to the system.
 * Computes the prices of inverse synths.
@@ -137,15 +127,11 @@ The depot has its own dedicated oracle, and all exchanges are performed at the c
 
 ### AddressResolver
 
-#### Responsibilities
-
 * Tracks the latest instances of all contracts required in the PeriFinance system, allowing them to be queried by a `bytes32` name
 
 Each contract which inherits \(or mixes in when considering multiple inheritance\) [`MixinResolver`](https://docs.synthetix.io/contracts/source/contracts/MixinResolver/) will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
 
 ### Proxy
-
-#### Responsibilities
 
 * Provides static addresses for contracts where the underlying logic can be upgraded.
 * Provides the interface that allows contracts to operate beneath a proxy.

@@ -1,10 +1,10 @@
 # DEPLOYMENT PROCEDURE
 
-This script can `build` \(compile and flatten\), `deploy` and `verify` \(on Etherscan\) the PeriFinance code to a testnet or mainnet.
+Below mentioned script used to build , deploy and Verify  the PeriFinance Source  code to a Different Platform testnet and mainnet.
 
 ### 1. Build <a id="1-build"></a>
 
-Will compile bytecode and ABIs for all `.sol` files found in `node_modules` and the `contracts` folder. It will output them in a `compiled` folder in the given build path \(see below\), along with the flattened source files under the folder `flattened`.
+This will compile bytecode and ABIs for all .sol files found in node\_modules and the contratcs folder. It will output them in a compiled  folder in the given build path mentioned below, along with the flattened source files under the folder flattened
 
 ```text
 # build (flatten and compile all .SOL sources)
