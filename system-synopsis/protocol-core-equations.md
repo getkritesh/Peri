@@ -5,11 +5,16 @@ Peri Finance Protocol using below equations to handle staking and subject to cha
 * Staked Amount \(User\)
 * C-Ratio
 * Peri locked amount
+* Available External token stake Amount
 * Staked Escrow Balance
 * APR
   * APR by user
+* Reward Distribution
+* Fit to claimable
+* LP Price
+* Staking Reward\(LP\) reward calculation algorithm
 
-##  <a id="Staked-Amount-(User)"></a>
+## Staked Amount
 
 ![](../.gitbook/assets/1%20%281%29.png)
 
@@ -40,6 +45,10 @@ at, `PERI Locked Amount` = \(`debt / issuanceRatio`\) - `USDC Staked Amount`
 ## LP Price
 
 ![](../.gitbook/assets/5%20%281%29.png)
+
+## Staking Rewards\(LP\) reward calculation algorithm <a id="StakingRewards(LP)-reward-calculation-algorithm"></a>
+
+![](../.gitbook/assets/6%20%282%29.png)
 
 ![](../.gitbook/assets/6%20%281%29.png)
 
