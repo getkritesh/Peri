@@ -54,7 +54,9 @@ On a successful transaction, the following events occur:
 
 ### Claiming Fees <a id="claiming-fees"></a>
 
-Check out our claiming walkthrough for more information
+More info
+
+Check out our claiming walkthru for more information
 
 **Called contract:** `ProxyFeePool`
 
@@ -78,7 +80,9 @@ On a successful transaction, the following events occur:
 
 ### Trading \(Exchanging\) pynths <a id="trading-exchanging-synths"></a>
 
-Check out our trading walkthrough for more information
+More info
+
+Check out our trading walkthru for more information
 
 **Called contract:** `ProxyERC20`
 

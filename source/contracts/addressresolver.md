@@ -70,7 +70,7 @@ Returns Issuer address
 
 **Requires**
 
-* [require\(..., "Cannot find Issuer address"\)](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/AddressResolver.sol#L61)
+* require\(..., "Cannot find Issuer address"\)
 
 #### `requireAndGetAddress` <a id="requireandgetaddress"></a>
 
