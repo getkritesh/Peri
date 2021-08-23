@@ -139,7 +139,7 @@ Each contract which inherits `MixinResolver` will have access to the `AddressRes
 
 Each contract which uses a proxy must inherit from `Proxyable`. Function calls are forwarded from the proxy to the proxyable base, while return data and event information travels the other way. Ultimately most contracts should communicate with one another by proxy
 
-The `PeriFinance`, `FeePool`, and all `Synth` contracts exist behind their own individual proxies.
+The `PeriFinance`, `FeePool`, and all `Pynth` contracts exist behind their own individual proxies.
 
 **Contracts**
 
