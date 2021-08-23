@@ -220,7 +220,7 @@
 
 #### `_cachedPynthDebts` <a id="_cachedsynthdebts"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L176)
+Source
 
 **Signature**
 
@@ -236,7 +236,7 @@
 
 #### `_currentDebt` <a id="_currentdebt"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L220)Details
+SourceDetails
 
 **Signature**
 
@@ -252,7 +252,7 @@
 
 #### `_currentSynthDebts` <a id="_currentsynthdebts"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L149)Details
+SourceDetails
 
 **Signature**
 
@@ -268,7 +268,7 @@
 
 #### `_issuedSynthValues` <a id="_issuedsynthvalues"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L130)Details
+SourceDetails
 
 **Signature**
 
@@ -284,7 +284,7 @@
 
 #### `_onlyIssuer` <a id="_onlyissuer"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L286)Details
+SourceDetails
 
 **Signature**
 
@@ -300,11 +300,11 @@
 
 **Requires**
 
-* [require\(..., "Sender is not Issuer"\)](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L287)
+* require\(..., "Sender is not Issuer"\)
 
 #### `_onlyIssuerOrExchanger` <a id="_onlyissuerorexchanger"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L295)Details
+SourceDetails
 
 **Signature**
 
@@ -320,11 +320,11 @@
 
 **Requires**
 
-* [require\(..., "Sender is not Issuer or Exchanger"\)](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L296)
+* require\(..., "Sender is not Issuer or Exchanger"\)
 
 #### `_requireSystemActiveIfNotOwner` <a id="_requiresystemactiveifnotowner"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L275)Details
+SourceDetails
 
 **Signature**
 
@@ -340,7 +340,7 @@
 
 #### `_totalNonSnxBackedDebt` <a id="_totalnonsnxbackeddebt"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L194)Details
+SourceDetails
 
 **Signature**
 
@@ -356,7 +356,7 @@
 
 #### `collateralManager` <a id="collateralmanager"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L91)Details
+SourceDetails
 
 **Signature**
 
@@ -372,7 +372,7 @@
 
 #### `etherCollateral` <a id="ethercollateral"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L83)Details
+SourceDetails
 
 **Signature**
 
@@ -388,7 +388,7 @@
 
 #### `etherCollateralsUSD` <a id="ethercollateralsusd"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L87)Details
+SourceDetails
 
 **Signature**
 
@@ -404,7 +404,7 @@
 
 #### `etherWrapper` <a id="etherwrapper"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L95)Details
+SourceDetails
 
 **Signature**
 
@@ -420,7 +420,7 @@
 
 #### `exchangeRates` <a id="exchangerates"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L75)Details
+SourceDetails
 
 **Signature**
 
@@ -436,7 +436,7 @@
 
 #### `exchanger` <a id="exchanger"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L71)Details
+SourceDetails
 
 **Signature**
 
@@ -452,7 +452,7 @@
 
 #### `issuer` <a id="issuer"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L67)Details
+SourceDetails
 
 **Signature**
 
@@ -468,7 +468,7 @@
 
 #### `systemStatus` <a id="systemstatus"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L79)Details
+SourceDetails
 
 **Signature**
 
@@ -486,7 +486,7 @@
 
 #### `purgeCachedSynthDebt` <a id="purgecachedsynthdebt"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L269)Details
+SourceDetails
 
 **Signature**
 
@@ -500,7 +500,7 @@
 
 #### `takeDebtSnapshot` <a id="takedebtsnapshot"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L271)Details
+SourceDetails
 
 **Signature**
 
@@ -514,7 +514,7 @@
 
 #### `updateCachedSynthDebtWithRate` <a id="updatecachedsynthdebtwithrate"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L263)Details
+SourceDetails
 
 **Signature**
 
@@ -528,7 +528,7 @@
 
 #### `updateCachedSynthDebts` <a id="updatecachedsynthdebts"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L261)Details
+SourceDetails
 
 **Signature**
 
@@ -542,7 +542,7 @@
 
 #### `updateCachedSynthDebtsWithRates` <a id="updatecachedsynthdebtswithrates"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L265)Details
+SourceDetails
 
 **Signature**
 
@@ -556,7 +556,7 @@
 
 #### `updateDebtCacheValidity` <a id="updatedebtcachevalidity"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L267)Details
+SourceDetails
 
 **Signature**
 
@@ -572,13 +572,13 @@
 
 #### `onlyIssuer` <a id="onlyissuer"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L290)
+Source
 
 #### `onlyIssuerOrExchanger` <a id="onlyissuerorexchanger"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L299)
+Source
 
 #### `requireSystemActiveIfNotOwner` <a id="requiresystemactiveifnotowner"></a>
 
-[Source](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/BaseDebtCache.sol#L281)
+Source
 
