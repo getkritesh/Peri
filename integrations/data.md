@@ -2,16 +2,16 @@
 
 ## Peri Finance Historical Data
 
-There are a number a ways to access Peri Finance's historical data in future 
+Peri Finance's historical data ca access using number of ways in future 
 
-* Query PeriFinance event log history and calls using The Graph subgraphs
-* Fetch state at some block in the past using an Archive Node
-* Query event logs 
-* Use a third party service like Google BigQuery or DuneAnalytics
+* Using calls on the Graph subgraphs
+* Using an Archive Node to fetch state at some block in the past
+* Using Query event logs on the Graph Subgraph 
+* Using Third party service like Google BigQuery
 
-#### The Graph <a id="the-graph"></a>
+#### The Graph  and Subgraph <a id="the-graph"></a>
 
-Peri Finance has indexed protocol data on the Graph, a decentralized network for querying network data. The Graph allows for the creation of custom data sets, aka "subgraphs", which are easily queryable. 
+To Query Network Data from Decentralized Network , Peri Finance has indexed protocol data on the Graph. The Graph allows for the creation of custom data sets called Subgraph , which allowed to be queryable. 
 
 Peri Finance currently has One separate subgraphs for retrieving information specific to Peri Finance smart contracts. A subgraph is an entity-based data source which replays all transactions since the genesis block and uses custom code to create queryable entities as each block is processed.
 

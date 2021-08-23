@@ -9,17 +9,13 @@ Peri Finance Protocol using below equations to handle staking and subject to cha
 * APR
   * APR by user
 
-## Staked Amount \(User\) <a id="Staked-Amount-(User)"></a>
+##  <a id="Staked-Amount-(User)"></a>
 
-_Staked Amount = \( Collateralisation Ratio / Issuance Ratio\)\*⋅Collateral_
+![](../.gitbook/assets/1%20%281%29.png)
 
-## C-Ratio <a id="C-Ratio"></a>
+## Available External Token Stake Amount
 
-_Collateralisation Ratio\(%\)= \( \(PERI balance+ USDC staked\)/ Debt \) \*100_
-
-## Peri locked amount <a id="Peri-locked-amount"></a>
-
-\(`debt` / `Issuance Ratio`\) - `USDC Staked` = `PERI Locked`
+![](../.gitbook/assets/2%20%281%29.png)
 
 ## Staked Escrow Balance <a id="Staked-Escrow-Balance"></a>
 
@@ -33,25 +29,15 @@ If \( `transferable PERI` = 0\)
 
 at, `PERI Locked Amount` = \(`debt / issuanceRatio`\) - `USDC Staked Amount`
 
-## APR <a id="APR"></a>
+## APR
 
-RW: Weekly Rewards
+![](../.gitbook/assets/3%20%281%29.png)
 
-E: Exchange Rate
+## Reward Distribution <a id="Reward-Distribution"></a>
 
-RF: fees to distribute\(in single period\)
+![](../.gitbook/assets/4.png)
 
-RI: inflation to distribute\(in single period\)
+## Fit to Claimable
 
-####  RW=E⋅RF+E ⋅RI
 
-General staking APR,
-
- APR\(%\) =  \(RW \*52 / Total Locked Assets\) \*100
-
-All value is considered as USD currency unit. Total locked asset is the total asset amount staked in the system\(It will be the PERI + USDC amount for current case\). 52 is a number of weeks in a year.
-
-## APR by user
-
- APR\(%\) = APR \* \(Staked per user/ Total Staked\)
 
