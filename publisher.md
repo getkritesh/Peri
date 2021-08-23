@@ -13,11 +13,7 @@ node publish build # "--help" for options
 
 ### 2. Deploy <a id="2-deploy"></a>
 
-Will attempt to deploy \(or reuse\) all of the contracts listed in the given `contract-flags` input file, as well as perform initial connections between the contracts.
-
-:warning: **This step requires the `build` step having been run to compile the sources into ABIs and bytecode.**
-
-> Note: this action will update the deployment files for the associated network in "publish/deployed/". For example, here's the "deployment.json" file for mainnet.
+This will  deploy \(or reuse\) all of the contracts listed in the contract-flags input file, as well as perform initial connections between the contracts.
 
 ```text
 # deploy (take compiled SOL files and deploy)
@@ -30,12 +26,9 @@ node publish deploy # "--help" for options
 * `-b, --build-path [value]` Path for built files to go. \(default of `./build` - relative to the root of this repo\). The folders `compiled` and `flattened` will be made under this path and the respective files will go in there.
 * `-c, --contract-deployment-gas-limit <value>` Contract deployment gas limit \(default: 7000000 \(7m\)\)
 * `-d, --deployment-path <value>` Path to a folder that has your input configuration file \(`config.json`\), the synths list \(`synths.json`\) and where your `deployment.json` file will be written \(and read from if it currently exists\).  
-
-> Note: the advantage of supplying this folder over just using the network name is that you can have multiple deployments on the same network in different folders
-
 * `-g, --gas-price <value>` Gas price in GWEI \(default: "1"\)
 * `-m, --method-call-gas-limit <value>` Method call gas limit \(default: 150000\)
-* `-n, --network <value>` The network to run off. One of mainnet, kovan, rinkeby, rospen. \(default: "kovan"\)
+* `-n, --network <value>` The network to run off. One of mainnet, kovan. \(default: "kovan"\)
 * `-o, --oracle <value>` The address of the oracle to use. 
 * `-f, --fee-auth <value>` The address of the fee Authority to use for feePool.  --oracle-gas-limit 
 
@@ -51,11 +44,7 @@ node publish deploy -n local -d publish/deployed/local -g 8
 
 ### 3. Verify <a id="3-verify"></a>
 
-Will attempt to verify the contracts on Etherscan \(by uploading the flattened source files and ABIs\).
-
-:warning: **Note: the `build` step is required for the ABIs and the `deploy` step for the live addresses to use.**
-
-\*\*\*\*
+To verify the contracts on Etherscan \(by uploading the flattened source files and ABIs\).
 
 ```text
 # verify (verify compiled sources by uploading flattened source to Etherscan via their API)
@@ -64,27 +53,39 @@ node publish verify # "--help" for options
 
 ### 4. Nominate New Owner <a id="4-nominate-new-owner"></a>
 
-For all given contracts, will invoke `nominateNewOwner` for the given new owner;
+For all given contracts, will invoke nominateNewOwner for the given new owner;
 
-#### node publish nominate \# "--help" for options
+```text
+# Nominate New Owner
+node publish nominate # "--help" for options
+```
 
 ### 5. Owner Actions <a id="5-owner-actions"></a>
 
-Helps the owner take ownership of nominated contracts and run any deployment tasks deferred to them.
+It assist owner take ownership of nominated contracts and run any deployment tasks deferred to them.
 
-#### node publish owner \# "--help" for options
+```text
+# Helps the owner take ownership of nominated contracts and run any deployment tasks deferred to them
+node publish owner # "--help" for options
+```
 
 ### 6. Remove **P**ynths <a id="6-remove-synths"></a>
 
-Will attempt to remove all given synths from the `PeriFinance` contract \(as long as they have `totalSupply` of `0`\) and update the `config.json` and `pynths.json` for the deployment folder.
+This script attempt to remove all given synths from the  Peri finance contract \(as long as they have total supply of 0 and update config.json and pynths.json for the deployment folder.
 
-#### node publish remove-synths \# "--help" for options
+```text
+# Remove all given synths from the  Peri finance contract
+node publish remove-synths # "--help" for options
+```
 
 ### 7. Replace Pynths <a id="7-replace-synths"></a>
 
-Will attempt to replace all given synths with a new given `subclass`. It does this by disconnecting the existing TokenState for the Pynth and attaching it to the new one.
+This will attempt to replace all given synths with a new given  subclass It does this by disconnecting the existing TokenState for the Pynth and attaching it to the new one.
 
-#### node publish replace-synths \# "--help" for options
+```text
+# attempt to replace all given synths with a new
+node publish replace-synths # "--help" for options
+```
 
 ### 7. Purge Pynths <a id="7-purge-synths"></a>
 
