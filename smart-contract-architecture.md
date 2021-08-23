@@ -63,11 +63,11 @@ Pynths implement their own issuance and burning logic, but only the PeriFinance 
 * Stores and manages the details of the last several mint/burn events for each account, in order to compute the quantity of fees and rewards they are owed for the past several fee periods. 
 * Allows issuers to claim any fees and rewards owed to them.
 
-When fees are collected, PeriFinance contract informs to the fee pool and it is allowed to append historic issuance records to its own account issuance ledger. The fee pool mostly interacts with other system components through PeriFinance only. 
+The fee pool mostly interacts with other system components through PeriFinance only. Whenever fees are collected, PeriFinance contract informs to the fee pool, it is allowed to append historic issuance records to its own account issuance ledger. 
 
 For example, Fee Pool interacts with the oracle through the PeriFinance contract, in order to issue fees and rewards. It also retrieves other data from there, like debt ledger information, issuance and collateralization ratios, and the addresses of pynth contracts.
 
-As the fee pool is responsible for computing the quantity of both exchange fees and inflationary rewards that issuers are entitled to, it also communicates with the inflationary supply complex. In particular, the `RewardsDistribution` contract is allowed to set the level of inflationary rewards to be distributed through the fee pool, which then disburses them by adding new vesting schedule entries in the `RewardEscrow` contract.
+Fee pool is responsible for computing the quantity of inflationary rewards that issuers are entitled to, it also communicates with the inflationary supply complex. In particular, the `RewardsDistribution` contract is allowed to set the level of inflationary rewards to be distributed through the fee pool, which then disburses them by adding new vesting schedule entries in the `RewardEscrow` contract.
 
 **Constituent Contracts**
 
