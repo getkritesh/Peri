@@ -84,8 +84,9 @@ The RewardsDistribution contract set the level of inflationary rewards to be dis
 
 * Defines the schedule according to which PERI tokens are generated from the inflationary supply.
 * Tracks for each year how many inflationary tokens have been minted so far, and how many remain.
-* Distributes inflationary rewards to different recipients in the proportions specified by the protocol; that is for staking versus providing Uniswap liquidity.
-* Holds the minted inflationary rewards in escrow for a year after they are claimed. \* Holds and distributes the escrowed tokens from the original token sale.
+* Distributes inflationary rewards to different recipients in the proportions specified by the Peri finance protocol; i.e. for staking versus providing Uniswap liquidity.
+* Holds the minted inflationary rewards in escrow for a year after they are claimed. 
+* Holds and distributes the escrowed tokens from the original token sale.
 
 The inflationary supply complex is concerned with controlling the flow of new PERI tokens being injected into the market. In this capacity it communicates with the `PeriFinance` contract. The actual fraction of the weekly SNX rewards that a particular account is entitled to claim is computed by the fee pool, which is able to direct the `RewardEscrow` and `RewardsDistribution` contracts as to how they should distribute the new tokens.
 
