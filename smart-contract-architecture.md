@@ -107,7 +107,7 @@ The actual fraction of the weekly PERI rewards that a particular account is enti
 * Updates, stores, and distributes up-to-date token prices .
 * Provides functionality to perform exchange rate conversions between pynth flavours.
 
-The on-chain manifestation of the oracle is the `ExchangeRates` contract, whose stored prices it frequently updates. The primary user of these prices is the `PeriFinance` contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of pynths when performing an exchange of one flavour for another.
+The on-chain explanation of the oracle is the `ExchangeRates` contract, whose stored prices it frequently updates. The primary user of these prices is the `PeriFinance` contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of pynths when performing an exchange of one flavour for another.
 
 It is also used by some other contracts, such as the `Depot` and `PurgeablePynth` contracts.
 
