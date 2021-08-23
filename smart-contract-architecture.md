@@ -2,7 +2,7 @@
 
 ## Overview
 
-The PeriFinance system is composed of a number of core contract complexes, and several auxiliary contracts that enhance token liquidity and general system functionality. These on-chain entities and how they communicate is reflected in the following high-level diagram.
+The Peri Finance system is encapsulated of a number of core contract complexes, and several auxiliary contracts that enhance token liquidity and  overall system functionality. These on-chain component and how they communicate is reflected in the following high-level diagram.
 
 ![](.gitbook/assets/contract-architecture.svg)
 
