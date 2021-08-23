@@ -1,14 +1,5 @@
 # DESIGN AND ARCHITECTURE
 
-Here you will find descriptions of the smart contract interfaces of every smart contract in the PeriFinance System. These documents go a bit further than the code does. These documents try to emphasise the reasons behind the architecture, specifically highlighting interactions between system components. The technical aspects of the system are also discussed together with the details of the incentive mechanism, and with links back to governance processes.
-
-Developers wishing to understand PeriFinance code and the tradeoffs within it will be well-advised to read these documents alongside the Solidity itself.
-
-The addresses of currently-deployed contract instances are available in the Addresses section.
-
-The deployment of contracts is managed by the Publisher section.  
-
-
 ## Overview
 
 The PeriFinance system is composed of a number of core contract complexes, and several auxiliary contracts that enhance token liquidity and general system functionality. These on-chain entities and how they communicate is reflected in the following high-level diagram.
