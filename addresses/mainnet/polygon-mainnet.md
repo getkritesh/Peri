@@ -1,6 +1,6 @@
 # POLYGON MAINNET
 
-Peri Finance Staking Dapp Smart Contract in Polygon Mainnet .
+Peri Finance Staking Dapp Smart Contract Deployed in Polygon Mainnet .
 
 ### Polygon MAINNET <a id="mainnet"></a>
 

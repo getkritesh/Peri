@@ -9,7 +9,7 @@ Peri Finance's historical data ca access using number of ways in future
 * Using Query event logs on the Graph Subgraph 
 * Using Third party service like Google BigQuery
 
-## The Graph  and Subgraph
+#### The Graph  and Subgraph <a id="the-graph"></a>
 
 To Query Network Data from Decentralized Network , Peri Finance has indexed protocol data on the Graph. The Graph allows for the creation of custom data sets called Subgraph , which allowed to be queryable. 
 
@@ -17,11 +17,11 @@ Peri Finance currently has One separate subgraphs for retrieving information spe
 
 Alternatively, each of these subgraphs can be queried using GraphQL.
 
-## Event Logs Query
+#### Event Logs Query <a id="query-event-logs-directly-on-the-evm"></a>
 
 Instead of using the subgraphs provided, you could directly query the EVM via most free providers \(such as Infura \).
 
-## Using an Archive Node
+#### Using an Archive Node <a id="using-an-archive-node"></a>
 
 You can also use an Network\(Polygon/Ethereum/BSC\) node with full historical state to read the blockchain state at some block in the past. 
 
