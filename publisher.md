@@ -1,6 +1,6 @@
 # DEPLOYMENT PROCEDURE
 
-Below mentioned script used to build , deploy and Verify  the PeriFinance Source  code to a Different testnet and mainnet Network.
+Below mentioned script used to build , deploy and Verify  the PeriFinance Source  code to a Different Platform testnet and mainnet.
 
 ### 1. Build <a id="1-build"></a>
 
