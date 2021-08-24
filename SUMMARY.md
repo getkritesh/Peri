@@ -162,7 +162,6 @@
     * [Math](source/libraries/untitled-3.md)
     * [SafeDecimalMath](source/libraries/untitled-2.md)
     * [SafeMath](source/libraries/untitled-1.md)
-    * [VestingEntries](source/libraries/untitled.md)
 * [GUIDES](guides/README.md)
   * [PERI Token is Tradable at PancakeSwap](guides/peri-token-is-tradable-at-pancakeswap.md)
   * [PERI Finance dApp Binance Smart Chain Integration](guides/untitled-9.md)

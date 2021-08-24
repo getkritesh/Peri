@@ -18,56 +18,58 @@ Each of the elements in this graph may be a complex composed of several contract
 
 ### PeriFinance
 
-* Implements the PERI token.
-* Tracks operational pynths.
+*  PERI token Implementation.
+* Tracking Operational pynths.
 * Issues and burns pynths.
-* Exchanges between synth flavours.
+* Exchanges between pynth flavours.
 * Mints the inflationary supply.
 * Maintains the system debt ledger.
 
-PeriFinance contract communicates with pynths to manage their supply, as well as the fee pool to remit fees when synth exchanges occur. In order to properly convert between pynths, and to understand value of debt induced by minting tokens, the PeriFinance contract retrieves current token prices from the oracle. This contract also communicates with the inflationary supply complex to mint the correct quantity when expanding the supply of PERI, and to distribute the new tokens appropriately.
+Peri Finance smart contract communicates with pynths smart contract to manage their supply, and also the fee pool to remit fees when there is exchanges occur in pynths. 
 
-Along with the debt ledger, which is a time series history of the overall value of the PeriFinance  ecosystem, issuance data for the current fee period is updated whenever **p**ynths are issued or burnt. This complex is also responsible for pushing historical issuance information to the fee pool, so that as fee periods roll over, a record of what portion of the total system debt is owned by different issuers is known when computing their fee entitlements.
+In order to properly convert between pynths, and to understand value of debt induced by minting tokens, the Peri Finance contract retrieves current token prices from the oracle.  when expanding the supply of PERI, and to distribute the new tokens appropriately this contract  communicates with the inflationary supply complex to mint the correct quantity.
+
+Along with the debt ledger, which is a time series history of the overall value of the PeriFinance  ecosystem, issuance data for the current fee period is updated whenever pynths are issued or burnt. This is also responsible for pushing historical issuance information to the fee pool, so that as fee periods roll over, a record of what portion of the total system debt is owned by different issuers is known when computing their fee entitlements.
 
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
 | `PeriFinance` | The main token contract. |
-| `PeriFinanceState` | An auxiliary state contract that sits alongside PeriFinance, which tracks current issuer data and the debt ledger. |
+| `PeriFinanceState` | An auxiliary state contract which tracks current issuer data and the debt ledger. |
 | `Issuer` | An auxiliary helper contract that performs the issuing and burning functionality. |
 | `Exchanger` | An auxiliary helper contract that performs the exchange and settle functionality. |
 
 #### Pynth <a id="synth"></a>
 
 * Implements all pynth tokens.
-* Liquidates frozen inverse pynths.
 
-Many instances of the Pynth token contract are deployed, one for each flavour of synth, including inverse synths. Since they run the same logic, synths are largely interchangeable, being distinguished only by their names and prices.
+No of instances of the Pynth token contract are deployed, one for each flavour of pynth. pynths are largely interchangeable, being differentiate only by their names and prices because they run the same logic,
 
 Pynths implement their own issuance and burning logic, but only the PeriFinance and fee pool contracts may invoke them. The PeriFinance contract uses these functions for issuance and burning by stakers, while the fee pool uses them to burn fees at the fee address and issue them to the claimers address.
-
-Purgeable Pynths also retrieve prices from the oracle at the time of their liquidation to check if the value of their circulating supply is low enough to liquidate.
 
 **Constituent Contracts**
 
 | Contract | Description |
 | :--- | :--- |
-| `Pynth` | The base ERC20 token contract comprising most of the behaviour of all synths. Each synth has an associated proxy and token state contract. |
-| `PurgeableSynth` | A synth contract that can be liquidated at the end of its life, if its supply is low enough or it is a frozen inverse synth. |
+| `Pynth` | The base ERC20 token contract comprising most of the behaviour of all pynths. Each pynth has an associated proxy and token state contract. |
 
 #### Fee Pool <a id="fee-pool"></a>
 
-* Computes fee entitlements based on the current exchange fee rate and incentive structure, to incentivise users to keep the system operating correctly.
-* Defines the boundaries of recent fee periods, tracking the fees and rewards to be distributed in each one.
+* Computes fee entitlements based on the current exchange fee rate 
+* Tracking the fees and rewards to be distributed in each one.
 * Allows anyone to roll over to the next fee period once the current one has closed.
-* Accumulates synth exchange fees, holding them as a pool of pUSD.
-* Directs the `RewardEscrow` to escrow inflationary PERI rewards for eligible issuers.
-* Stores and manages the details of the last several mint/burn events for each account, in order to compute the quantity of fees and rewards they are owed for the past several fee periods. \* Allows issuers \(or their delegated hot wallets\) to claim any fees and rewards owed to them.
+* Directs the RewardEscrow to escrow inflationary PERI rewards for eligible issuers.
+* Stores and manages the details of the last several mint/burn events for each account, in order to compute the quantity of fees and rewards they are owed for the past several fee periods. 
+* Allows issuers to claim any fees and rewards owed to them.
 
-The `PeriFinance` contract informs the fee pool when fees are collected, and it is allowed to append historic issuance records to its own account issuance ledger. The fee pool mostly interacts with other system components through `PeriFinance`. For example, it only interacts with the oracle through the PeriFinance contract, in order to issue fees and rewards. It also retrieves other data from there, like debt ledger information, issuance and collateralization ratios, and the addresses of synth contracts.
+The fee pool mostly interacts with other system components through PeriFinance only. Whenever fees are collected, PeriFinance contract informs to the fee pool, it is allowed to append historic issuance records to its own account issuance ledger. 
 
-As the fee pool is responsible for computing the quantity of both exchange fees and inflationary rewards that issuers are entitled to, it also communicates with the inflationary supply complex. In particular, the `RewardsDistribution` contract is allowed to set the level of inflationary rewards to be distributed through the fee pool, which then disburses them by adding new vesting schedule entries in the `RewardEscrow` contract.
+For example, Fee Pool interacts with the oracle through the PeriFinance contract, in order to issue fees and rewards. It also retrieves other data from there, like debt ledger information, issuance and collateralization ratios, and the addresses of pynth contracts.
+
+Fee pool is responsible for computing the quantity of inflationary rewards that issuers are entitled to, it also communicates with the inflationary supply complex. 
+
+The RewardsDistribution contract set the level of inflationary rewards to be distributed through the fee pool, which then disburses them by adding new vesting schedule entries in the RewardEscrow contract.
 
 **Constituent Contracts**
 
@@ -82,10 +84,13 @@ As the fee pool is responsible for computing the quantity of both exchange fees 
 
 * Defines the schedule according to which PERI tokens are generated from the inflationary supply.
 * Tracks for each year how many inflationary tokens have been minted so far, and how many remain.
-* Distributes inflationary rewards to different recipients in the proportions specified by the protocol; that is for staking versus providing Uniswap liquidity.
-* Holds the minted inflationary rewards in escrow for a year after they are claimed. \* Holds and distributes the escrowed tokens from the original token sale.
+* Distributes inflationary rewards to different recipients in the proportions specified by the Peri finance protocol; i.e. for staking versus providing Uniswap liquidity.
+* Holds the minted inflationary rewards in escrow for a year after they are claimed. 
+* Holds and distributes the escrowed tokens from the original token sale.
 
-The inflationary supply complex is concerned with controlling the flow of new PERI tokens being injected into the market. In this capacity it communicates with the `PeriFinance` contract. The actual fraction of the weekly SNX rewards that a particular account is entitled to claim is computed by the fee pool, which is able to direct the `RewardEscrow` and `RewardsDistribution` contracts as to how they should distribute the new tokens.
+The inflationary supply complex control the flow of new PERI tokens being injected into the market. It communicates with the `PeriFinance` contract. 
+
+The actual fraction of the weekly PERI rewards that a particular account is entitled to claim is computed by the fee pool, which is able to direct the `RewardEscrow` and `RewardsDistribution` contracts as to how they should distribute the new tokens.
 
 **Constituent Contracts**
 
@@ -99,12 +104,10 @@ The inflationary supply complex is concerned with controlling the flow of new PE
 
 #### Oracle <a id="oracle"></a>
 
-* Updates, stores, and distributes up-to-date token prices relevant to the system.
-* Computes the prices of inverse synths.
-* Disables exchange functionality if prices are not fresh.
-* Provides functionality to perform exchange rate conversions between synth flavours.
+* Updates, stores, and distributes up-to-date token prices .
+* Provides functionality to perform exchange rate conversions between pynth flavours.
 
-The on-chain manifestation of the oracle is the `ExchangeRates` contract, whose stored prices it frequently updates. The primary user of these prices is the `PeriFinance` contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of synths when performing an exchange of one flavour for another.
+The on-chain explanation of the oracle is the `ExchangeRates` contract, whose stored prices it frequently updates. The primary user of these prices is the `PeriFinance` contract, which needs them to calculate debt allocations when issuing and burning pynths, and to determine the correct quantity of pynths when performing an exchange of one flavour for another.
 
 It is also used by some other contracts, such as the `Depot` and `PurgeablePynth` contracts.
 
@@ -113,15 +116,13 @@ It is also used by some other contracts, such as the `Depot` and `PurgeablePynth
 | Contract | Description |
 | :--- | :--- |
 | Oracle | The oracle is responsible for collecting and updating all token prices known to the PeriFinance system. Although it is not a contract, it controls a known Ethereum address from which price updates are sent to the `ExchangeRates` contract. |
-| `ExchangeRates` | The PeriFinance exchange rates contract which receives token prices from the oracle, and supplies them to all contracts that need it. |
+| ExchangeRates | The PeriFinance exchange rates contract which receives token prices from the oracle, and supplies them to all contracts that need it. |
 
 ### Token Circulation <a id="token-circulation"></a>
 
 #### Depot <a id="depot"></a>
 
-The `Depot` is a vendor contract that allows users to exchange their ETH for pUSD or PERI, or their pUSD for PERI. It also allows users to deposit Pynths to be sold in exchange for ETH.
-
-The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming pUSD is priced at one dollar.
+The Depot allows users to exchange their pUSD for PERI. The depot has its own dedicated oracle, and all exchanges are performed at the current market prices, assuming pUSD is priced at one dollar.
 
 ### Infrastructure <a id="infrastructure"></a>
 
@@ -129,16 +130,16 @@ The depot has its own dedicated oracle, and all exchanges are performed at the c
 
 * Tracks the latest instances of all contracts required in the PeriFinance system, allowing them to be queried by a `bytes32` name
 
-Each contract which inherits \(or mixes in when considering multiple inheritance\) [`MixinResolver`](https://docs.synthetix.io/contracts/source/contracts/MixinResolver/) will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
+Each contract which inherits `MixinResolver` will have access to the `AddressResolver` contract, and can lookup at transaction time where it's sibling contracts are located.
 
 ### Proxy
 
-* Provides static addresses for contracts where the underlying logic can be upgraded.
-* Provides the interface that allows contracts to operate beneath a proxy.
+* Provides a static addresses for contracts where the underlying logic can be upgraded.
+* Provides an interface that allows contracts to operate beneath a proxy.
 
 Each contract which uses a proxy must inherit from `Proxyable`. Function calls are forwarded from the proxy to the proxyable base, while return data and event information travels the other way. Ultimately most contracts should communicate with one another by proxy
 
-The `PeriFinance`, `FeePool`, and all `Synth` contracts exist behind their own individual proxies.
+The `PeriFinance`, `FeePool`, and all `Pynth` contracts exist behind their own individual proxies.
 
 **Contracts**
 
