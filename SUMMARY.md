@@ -166,7 +166,7 @@
   * [PERI Token is Tradable at PancakeSwap](guides/peri-token-is-tradable-at-pancakeswap.md)
   * [PERI Finance dApp Binance Smart Chain Integration](guides/untitled-9.md)
   * [PERI Finance LP Rewards Program](guides/untitled-8.md)
-  * [PERI dApp Guide — 1. Setting/Stake-Mint](guides/untitled-7.md)
+  * [Staking dApp — 1. Setting/Stake-Mint](guides/untitled-7.md)
   * [PERI dApp Guide — 2. Burn](guides/untitled-6.md)
   * [PERI dApp Guide — 3. Reward](guides/untitled-5.md)
   * [PERI dApp Guide — 4. Earn(LP Reward)](guides/untitled.md)

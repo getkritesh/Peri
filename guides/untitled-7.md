@@ -1,12 +1,12 @@
-# PERI dApp Guide — 1. Setting/Stake-Mint
+# Staking dApp — 1. Setting/Stake-Mint
 
-This article will introduce staking and minting pUSD progress of PERI Finance staking dApp with updated UI. We will explain the whole procedure with the Metamask wallet.
+This article will introduce staking and minting pUSD progress of PERI Finance staking dApp with updated UI.&#x20;
 
-We’ve also uploaded a detailed guide on Youtube. Please check the video below:
+We will explain the whole procedure with the Metamask wallet.
 
 ## Basic Setting — Polygon Network <a href="68fe" id="68fe"></a>
 
-If users want to send PERI tokens from Ethereum Mainnet to Polygon(Matic) Mainnet, please check this guide:[Polygon(Matic) Bridge Guide on PERI FinanceIn this guide, we will explain you how to use the official Polygon Bridge.medium.com](https://medium.com/perifinance/polygon-matic-bridge-guide-on-peri-finance-e8c7e6570056)
+If users want to send PERI tokens from Ethereum Mainnet to Polygon(Matic) Mainnet, please check this guide
 
 ### Add Polygon Matic Mainnet in Metamask <a href="0dc5" id="0dc5"></a>
 
@@ -16,13 +16,15 @@ Step 2. Press ‘Custom RPC’ to set BSC network.
 
 Step 3. Fill contents as below:
 
-* **Network Name:** Matic Mainnet
-* **New RPC URL:** [https://rpc-mainnet.matic.network](https://rpc-mainnet.matic.network)
+* **Network Name:** Polygon Matic Mainnet
+* **New RPC URL:** [https://polygon-rpc.com](https://polygon-rpc.com)
 * **Chain ID:** 137
 * **Symbol: **MATIC
 * **Block Explorer URL**: [https://polygonscan.com](https://polygonscan.com)
 
-And click ‘Save’![](https://miro.medium.com/max/60/1\*gkGdWd\_yUGeHYfPBUPf14w.jpeg?q=20)![](https://miro.medium.com/max/700/1\*gkGdWd\_yUGeHYfPBUPf14w.jpeg)
+And click ‘Save’
+
+![](../.gitbook/assets/Polygon\_AddNetwork\_Metamask.png)
 
 ### Add PERI, pUSD, USDC, DAI Token on Polygon Matic Mainnet <a href="9055" id="9055"></a>
 
@@ -38,15 +40,15 @@ PERI: **0xDC0E17eAE3B9651875030244b971fa0223a1764f**\
 USDC: **0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174**\
 DAI: **0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063**
 
-And click ‘Next’![](https://miro.medium.com/max/60/1\*3nH2HfzcgkDOzRrZ-l6YtQ.png?q=20)![](https://miro.medium.com/max/700/1\*3nH2HfzcgkDOzRrZ-l6YtQ.png)
+And click ‘Next’
 
-Step 3. After you click ‘Add tokens’, you can see the current PERI amounts.![](https://miro.medium.com/max/60/1\*gEUcnRvmFoawY8XWX-TpmQ.jpeg?q=20)![](https://miro.medium.com/max/700/1\*gEUcnRvmFoawY8XWX-TpmQ.jpeg)
+![](https://miro.medium.com/max/700/1\*3nH2HfzcgkDOzRrZ-l6YtQ.png)
+
+Step 3. After you click ‘Add tokens’, you can see the current PERI amounts.
+
+![](https://miro.medium.com/max/700/1\*gEUcnRvmFoawY8XWX-TpmQ.jpeg)
 
 ## Basic Setting — BSC Network <a href="403d" id="403d"></a>
-
-### Add Smart Chain Mainnet in Metamask <a href="47ab" id="47ab"></a>
-
-You can see details at the previous article:[PERI Finance — Metamask Setting Guide for Binance Smart Chain(BSC)This article will help users to add Binance Smart Chain (BSC — Mainnet) at Metamask wallet.medium.com](https://medium.com/perifinance/peri-finance-metamask-setting-guide-for-binance-smart-chain-bsc-65d4286e604e)
 
 ### Add PERI, pUSD, USDC, DAI Token on BSC Mainnet <a href="6a7d" id="6a7d"></a>
 
@@ -62,34 +64,64 @@ PERI: **0xb49B7e0742EcB4240ffE91661d2A580677460b6A**\
 USDC: **0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d**\
 DAI: **0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3**
 
-And click ‘Next’![](https://miro.medium.com/max/60/1\*9Iohm0z3kVTlPcnL6MUrsw.jpeg?q=20)![](https://miro.medium.com/max/700/1\*9Iohm0z3kVTlPcnL6MUrsw.jpeg)
+And click ‘Next’
 
-Step 3. After you click ‘Add tokens’, you can see the current PERI amounts.![](https://miro.medium.com/max/60/1\*bewwTAcWec7jwFC-rB5Y-A.jpeg?q=20)![](https://miro.medium.com/max/700/1\*bewwTAcWec7jwFC-rB5Y-A.jpeg)
+![](https://miro.medium.com/max/700/1\*9Iohm0z3kVTlPcnL6MUrsw.jpeg)
+
+Step 3. After you click ‘Add tokens’, you can see the current PERI amounts.
+
+![](https://miro.medium.com/max/700/1\*bewwTAcWec7jwFC-rB5Y-A.jpeg)
 
 ## Steps of Staking PERI on dApp <a href="0277" id="0277"></a>
 
 Users can mint PERI’s basic Pynth(PERI Synthetic Asset)pUSD through the staking process.
 
-Step 1. Click ‘Stake’ — ‘Mint’ on the main page.![](https://miro.medium.com/max/60/1\*zwVGVlHf3YQW2JyREfaVDg.jpeg?q=20)![](https://miro.medium.com/max/700/1\*zwVGVlHf3YQW2JyREfaVDg.jpeg)
+Step 1. Click ‘Stake’ — ‘Mint’ on the main page.
 
-Step 2. Input the pUSD amount that you want to mint by staking PERI, and click ‘Mint’.![](https://miro.medium.com/max/60/1\*ZPVxGJKASxxtDIKAfzP80w.jpeg?q=20)![](https://miro.medium.com/max/700/1\*ZPVxGJKASxxtDIKAfzP80w.jpeg)
+![](https://miro.medium.com/max/700/1\*zwVGVlHf3YQW2JyREfaVDg.jpeg)
 
-Step 2–1. If you first time that you’re request staking PERI on our dapp, this Metamask approval window will appear. Click ‘Confirm’![](https://miro.medium.com/max/60/1\*5jlWEW\_B0NozvbdiaSrM7A.jpeg?q=20)![](https://miro.medium.com/max/700/1\*5jlWEW\_B0NozvbdiaSrM7A.jpeg)![](https://miro.medium.com/max/60/1\*JFbHuXVERg0HKyVYf\_AXQg.jpeg?q=20)![](https://miro.medium.com/max/700/1\*JFbHuXVERg0HKyVYf\_AXQg.jpeg)
+Step 2. Input the pUSD amount that you want to mint by staking PERI, and click ‘Mint’.
 
-Step 2–2. And Click ‘Mint’ again.![](https://miro.medium.com/max/60/1\*ZPVxGJKASxxtDIKAfzP80w.jpeg?q=20)![](https://miro.medium.com/max/700/1\*ZPVxGJKASxxtDIKAfzP80w.jpeg)
+![](https://miro.medium.com/max/700/1\*ZPVxGJKASxxtDIKAfzP80w.jpeg)
+
+Step 2–1. If you first time that you’re request staking PERI on our dapp, this Metamask approval window will appear. Click ‘Confirm’
+
+![](https://miro.medium.com/max/700/1\*5jlWEW\_B0NozvbdiaSrM7A.jpeg)
+
+![](https://miro.medium.com/max/700/1\*JFbHuXVERg0HKyVYf\_AXQg.jpeg)
+
+Step 2–2. And Click ‘Mint’ again.
+
+![](https://miro.medium.com/max/700/1\*ZPVxGJKASxxtDIKAfzP80w.jpeg)
 
 Step 3. Check the gas fee on the Metamask, and click ‘Confirm’.\
-Once the transaction is completed, you can see the alert on dApp.![](https://miro.medium.com/max/60/1\*DDTzPiRcFlg1An3FLxLVcA.jpeg?q=20)![](https://miro.medium.com/max/700/1\*DDTzPiRcFlg1An3FLxLVcA.jpeg)![](https://miro.medium.com/max/60/1\*HJ\_wc8lYs5\_Lzrt2xbC65w.jpeg?q=20)![](https://miro.medium.com/max/700/1\*HJ\_wc8lYs5\_Lzrt2xbC65w.jpeg)
+Once the transaction is completed, you can see the alert on dApp.
 
-Step 5. You can see the staked PERI on the status window.![](https://miro.medium.com/max/60/1\*-XXu-NRWhtahfvznXggFfg.jpeg?q=20)![](https://miro.medium.com/max/700/1\*-XXu-NRWhtahfvznXggFfg.jpeg)
+![](https://miro.medium.com/max/700/1\*DDTzPiRcFlg1An3FLxLVcA.jpeg)
+
+![](https://miro.medium.com/max/700/1\*HJ\_wc8lYs5\_Lzrt2xbC65w.jpeg)
+
+Step 5. You can see the staked PERI on the status window.
+
+![](https://miro.medium.com/max/700/1\*-XXu-NRWhtahfvznXggFfg.jpeg)
 
 ## Steps of Staking DAI/USDC on dApp <a href="d3e0" id="d3e0"></a>
 
 If you scroll down from the Mint page, you can select staking DAI or USDC stablecoin. The process of staking DAI and USDC are same with PERI.\
 (For staking stablecoin, users should stake PERI token on dApp beforehand. Amount of staking stablecoin is limited to 20% of the whole staked amount)
 
-Step 1. Input the pUSD amount that you want to mint by staking DAI/USDC, and click ‘Mint’.![](https://miro.medium.com/max/60/1\*7MJypxmGo\_PDQ-huhfLUVQ.jpeg?q=20)![](https://miro.medium.com/max/700/1\*7MJypxmGo\_PDQ-huhfLUVQ.jpeg)![](https://miro.medium.com/max/60/1\*QTH13oIT5xqgH2qkW1FDhg.png?q=20)![](https://miro.medium.com/max/700/1\*QTH13oIT5xqgH2qkW1FDhg.png)
+Step 1. Input the pUSD amount that you want to mint by staking DAI/USDC, and click ‘Mint’.
 
-Step 2. Check the transaction fee on the Metamask, and click ‘Confirm’.![](https://miro.medium.com/max/60/1\*DDTzPiRcFlg1An3FLxLVcA.jpeg?q=20)![](https://miro.medium.com/max/700/1\*DDTzPiRcFlg1An3FLxLVcA.jpeg)
+![](https://miro.medium.com/max/700/1\*7MJypxmGo\_PDQ-huhfLUVQ.jpeg)
 
-After you see the alert on dApp. you can see staked amount on dApp page and Metamask.![](https://miro.medium.com/max/60/1\*Ojsbn4UZHt3Jk1Y6v5uagw.jpeg?q=20)![](https://miro.medium.com/max/700/1\*Ojsbn4UZHt3Jk1Y6v5uagw.jpeg)![](https://miro.medium.com/max/60/1\*-XXu-NRWhtahfvznXggFfg.jpeg?q=20)![](https://miro.medium.com/max/700/1\*-XXu-NRWhtahfvznXggFfg.jpeg)
+![](https://miro.medium.com/max/700/1\*QTH13oIT5xqgH2qkW1FDhg.png)
+
+Step 2. Check the transaction fee on the Metamask, and click ‘Confirm’.
+
+![](https://miro.medium.com/max/700/1\*DDTzPiRcFlg1An3FLxLVcA.jpeg)
+
+After you see the alert on dApp. you can see staked amount on dApp page and Metamask.
+
+![](https://miro.medium.com/max/700/1\*Ojsbn4UZHt3Jk1Y6v5uagw.jpeg)
+
+![](https://miro.medium.com/max/700/1\*-XXu-NRWhtahfvznXggFfg.jpeg)
