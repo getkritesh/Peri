@@ -17,5 +17,3 @@ description: Peri finance provides below  method to handle staking
    4. Update total supply
 3. Claim Rewards
 
-
-

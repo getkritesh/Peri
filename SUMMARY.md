@@ -169,11 +169,9 @@
   * [PERI dApp Guide — 1. Setting/Stake-Mint](guides/untitled-7.md)
   * [PERI dApp Guide — 2. Burn](guides/untitled-6.md)
   * [PERI dApp Guide — 3. Reward](guides/untitled-5.md)
-  * [PERI Finance X IM Community AMA Recap](guides/untitled-4.md)
+  * [PERI dApp Guide — 4. Earn(LP Reward)](guides/untitled.md)
   * [Launched Staking dApp on Ethereum Mainnet](guides/untitled-3.md)
   * [Details of APY — PERI Finance dApp](guides/untitled-2.md)
-  * [PERI dApp Guide — 4. Earn\(LP Reward\)](guides/untitled.md)
 * [SECURITY & AUDITS](audit-history.md)
 * [FAQ](faq/README.md)
   * [FREQUENTLY ASKED QUESTIONS](faq/frequently-asked-questions.md)
-

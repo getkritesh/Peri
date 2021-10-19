@@ -2,13 +2,13 @@
 
 ## Description
 
-This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C \(and updating every release\), contract A can refer to an `AddressResolver` and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contract. Thus this ensures that contract A always has the latest B and C contracts.
+This contract is a type of Service Locator pattern that allows for easier interaction between multiple contracts. Instead of contract A needing references to contracts B and C (and updating every release), contract A can refer to an `AddressResolver` and query for B and C at transaction time. Then, during a release, the AddressResolver is updated with the latest B and C contract. Thus this ensures that contract A always has the latest B and C contracts.
 
 **Source:** [contracts/AddressResolver.sol](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol)
 
 ## Variables
 
-#### `repository` <a id="repository"></a>
+#### `repository` <a href="repository" id="repository"></a>
 
 [Source](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L13)
 
@@ -18,9 +18,9 @@ The mapping of contract name to address
 
 ## Constructor
 
-#### `constructor` <a id="constructor_1"></a>
+#### `constructor` <a href="constructor_1" id="constructor_1"></a>
 
-\*\*\*\*[**Source**](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L15) ****
+****[**Source**](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L15)** **
 
 **Signature**
 
@@ -34,7 +34,7 @@ The mapping of contract name to address
 
 ## Views
 
-#### `areAddressesImported` <a id="areaddressesimported"></a>
+#### `areAddressesImported` <a href="areaddressesimported" id="areaddressesimported"></a>
 
 **Signature**
 
@@ -48,11 +48,11 @@ The mapping of contract name to address
 
 `view`
 
-#### `getAddress` <a id="getaddress"></a>
+#### `getAddress` <a href="getaddress" id="getaddress"></a>
 
 Returns a single address by it's `bytes32` key.Details
 
-#### `getPynth` <a id="getsynth"></a>
+#### `getPynth` <a href="getsynth" id="getsynth"></a>
 
 Returns Issuer address
 
@@ -70,9 +70,9 @@ Returns Issuer address
 
 **Requires**
 
-* [require\(..., "Cannot find Issuer address"\)](https://github.com/Synthetixio/synthetix/tree/v2.47.0-ovm/contracts/AddressResolver.sol#L61)
+* require(..., "Cannot find Issuer address")
 
-#### `requireAndGetAddress` <a id="requireandgetaddress"></a>
+#### `requireAndGetAddress` <a href="requireandgetaddress" id="requireandgetaddress"></a>
 
 **Signature**
 
@@ -88,11 +88,11 @@ Returns Issuer address
 
 **Requires**
 
-* [require\(..., "string calldata"\)](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L55)
+* [require(..., "string calldata")](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L55)
 
 ## Restricted Functions
 
-#### `importAddresses` <a id="importaddresses"></a>
+#### `importAddresses` <a href="importaddresses" id="importaddresses"></a>
 
 Import one or more addresses into the system for the given keys. Note: this function will overwrite any previous entries with the same key names, allowing for inline updates.
 
@@ -108,7 +108,7 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 **Requires**
 
-* [require\(..., "Input lengths must match"\)](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L20)
+* [require(..., "Input lengths must match")](https://github.com/perifinance/peri-finance/blob/master/contracts/AddressResolver.sol#L20)
 
 **Modifiers**
 
@@ -116,7 +116,7 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 ## External Functions
 
-#### `rebuildCaches` <a id="rebuildcaches"></a>
+#### `rebuildCaches` <a href="rebuildcaches" id="rebuildcaches"></a>
 
 **Signature**
 
@@ -130,7 +130,6 @@ Import one or more addresses into the system for the given keys. Note: this func
 
 ## Events
 
-#### `AddressImported` <a id="addressimported"></a>
+#### `AddressImported` <a href="addressimported" id="addressimported"></a>
 
 **Signature**: `AddressImported(bytes32 name, address destination)`
-

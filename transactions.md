@@ -6,11 +6,11 @@ description: >-
 
 # COMMON TRANSACTIONS
 
-## Staking \(Minting/Issuing\) pUSD
+## Staking (Minting/Issuing) pUSD
 
 **Called contract:** `ProxyERC20`
 
-**Target \(underlying\) contract:** `PeriFinance`
+**Target (underlying) contract:** `PeriFinance`
 
 **Methods:**
 
@@ -27,7 +27,7 @@ On a successful transaction, the following events occur:
 2. `Issued` `amount` to `account` emitted on `ProxypUSD`
 3. `IssuanceDebtRatioEntry` emitted on `ProxyFeePool`
 
-### Unstaking \(Burning\) pUSD <a id="unstaking-burning-susd"></a>
+### Unstaking (Burning) pUSD <a href="unstaking-burning-susd" id="unstaking-burning-susd"></a>
 
 More info
 
@@ -35,7 +35,7 @@ Check out our unstaking walkthru for more information
 
 **Called contract:** `ProxyERC20`
 
-**Target \(underlying\) contract:** `PeriFinance`
+**Target (underlying) contract:** `PeriFinance`
 
 **Methods:**
 
@@ -52,15 +52,13 @@ On a successful transaction, the following events occur:
 2. `Burned` `amount` from `account` emitted on `ProxypUSD`
 3. `IssuanceDebtRatioEntry` emitted on `ProxyFeePool`
 
-### Claiming Fees <a id="claiming-fees"></a>
+### Claiming Fees <a href="claiming-fees" id="claiming-fees"></a>
 
-More info
-
-Check out our claiming walkthru for more information
+Check out our claiming walkthrough for more information
 
 **Called contract:** `ProxyFeePool`
 
-**Target \(underlying\) contract:** `FeePool`
+**Target (underlying) contract:** `FeePool`
 
 **Methods:**
 
@@ -78,15 +76,13 @@ On a successful transaction, the following events occur:
 5. `VestingEntryCreated` emitted on `RewardEscrow`
 6. `FeesClaimed` emitted on `ProxyFeePool`
 
-### Trading \(Exchanging\) pynths <a id="trading-exchanging-synths"></a>
+### Trading (Exchanging) pynths <a href="trading-exchanging-synths" id="trading-exchanging-synths"></a>
 
-More info
-
-Check out our trading walkthru for more information
+Check out our trading walkthrough for more information
 
 **Called contract:** `ProxyERC20`
 
-**Target \(underlying\) contract:** `PeriFinance`
+**Target (underlying) contract:** `PeriFinance`
 
 **Methods:**
 
@@ -97,7 +93,7 @@ Check out our trading walkthru for more information
 
 On a successful transaction, the following events occur:
 
-#### Fee Reclamation 
+#### Fee Reclamation&#x20;
 
 If fees are owing on the `src` pynth, these events come first:
 
@@ -120,4 +116,3 @@ For every exchange, the following events then occur:
 5. `Transfer` from `0x0` to `FEE_ADDRESS` for `fee` emitted on `ProxypUSD`
 6. `Issued` `amount` to `FEE_ADDRESS` emitted on `ProxypUSD`
 7. `PynthExchange` for `account` emitted on `ProxySynthetix`
-

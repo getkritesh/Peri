@@ -2,9 +2,9 @@
 
 Peri Finance Staking Dapp Smart Contract Deployed in Polygon Mainnet .
 
-### Polygon MAINNET <a id="mainnet"></a>
+### Polygon MAINNET <a href="mainnet" id="mainnet"></a>
 
-```text
+```
 
 All contracts deployed on "polygon" network:
 ╔═════════════════════════════════╤════════════════════════════════════════════╤════════════════════════════════════════════════════════════════════════════╗
@@ -69,4 +69,3 @@ All contracts deployed on "polygon" network:
 ║ PynthUtil                       │ 0x0BCcaEFAde18e429A978093D2E937b782f64E7B7 │ https://polygonscan.com/address/0x0BCcaEFAde18e429A978093D2E937b782f64E7B7 ║
 ╚═════════════════════════════════╧════════════════════════════════════════════╧════════════════════════════════════════════════════════════════════════════╝
 ```
-

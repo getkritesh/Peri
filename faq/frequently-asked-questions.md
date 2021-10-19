@@ -1,8 +1,6 @@
-# Frequently Asked Questions
+# FREQUENTLY ASKED QUESTIONS
 
-## Frequently Asked Questions \(FAQs\)
+## Frequently Asked Questions (FAQs)
 
 coming soon..
-
-
 

@@ -16,7 +16,7 @@ description: WHITEPAPER
 
 ![](../.gitbook/assets/2.png)
 
-PERI Finance is a decentralized cross-chain synthetic issuance and derivative exchange protocol that provides unlimited liquidity on Polkadot network. With PERI finance, anyone can access traditional financial products and crypto assets without hustles and bustles. Additionally, PERI Finance provides solutions to current issues suffering Defi-projects on Ethereum including absurdly high GAS fee, slow transaction speed and the possibility of various attacks such as front running and flash loan by harnessing Layer2 with OVM\(Optimistic Virtual Machine\).
+PERI Finance is a decentralized cross-chain synthetic issuance and derivative exchange protocol that provides unlimited liquidity on Polkadot network. With PERI finance, anyone can access traditional financial products and crypto assets without hustles and bustles. Additionally, PERI Finance provides solutions to current issues suffering Defi-projects on Ethereum including absurdly high GAS fee, slow transaction speed and the possibility of various attacks such as front running and flash loan by harnessing Layer2 with OVM(Optimistic Virtual Machine).
 
 On PERI Finance, anyone can enjoy the opportunity to accessing a wide range of traditional financial and crypto assets in the forms of both unleveraged and leveraged synthetic products by removing difficult procedures and inconvenient processes which are obligatory for anyone to be exposed to the investment assets in the traditional financial market. By simply staking PERI and minting pUSD, users can convert one asset to another or open long or short positions of leveraged contracts underlying various assets without any restriction. Pynth, stands for Peri Synthetic asset, is a synthetic asset which price follows to the price of the underlying asset. Pynths currently provided by PERI Exchange are Forex, Crypto Currency and Commodity.
 
@@ -44,23 +44,23 @@ PERI is a utility token used to create a liquidity pool in the process of stakin
 
 The first reward comes from PERI inflationary supply policy. Initial supply of PERI will be 11,000,000 and 9,000,000 more will be issued for 40 months as compensation for staking with weekly interval, resulting in a total of 20,000,000 in circulation. 52 weeks after staking rewards start, inflation amount decreases weekly by 1.25%. After 40 months, the annual inflation rate will be fixed at 5%. 80% of the inflation reward will go to users who staked PERI and the rest to users staking USDC, which can be changed by PERIDAO later.
 
-The second reward is the distribution of PERI Assets' revenue. The managed funds come from 50% of the fund raised by PERI token sales, so the holders can be rewarded additional profits only by staking PERI. The profit only goes in proportion to those who maintain C-Ratio above 400% during rewards claiming period with PERI \(50%\) and BTC/ETH \(50%\).
+The second reward is the distribution of PERI Assets' revenue. The managed funds come from 50% of the fund raised by PERI token sales, so the holders can be rewarded additional profits only by staking PERI. The profit only goes in proportion to those who maintain C-Ratio above 400% during rewards claiming period with PERI (50%) and BTC/ETH (50%).
 
 Finally, the distribution of commissions incurred in Pynths transactions and leveraged Pynths contract trading. By staking PERI and USDC, users can mint pUSD . Users can exchange it for the other Pynth such as pBTC or lock some amount of pUSD for opening leveraged Pynth position like pBTC, pUSD, the system will take approximately 0.3% of the fee and transfer it to the fee pool which is to be distributed proportionately to the entitled PERI stakers. The fee rate of exchanging Pynths can vary depending on the assets.
 
 #### Collateral Ratio and Mint Pynths
 
-The collateral ratio \(C-Ratio\) will be set to an optimal ratio of 400%. The reason why C-Ratio is lower than other competing projects is that the risk of Pynths' position in the protocol is hedged with traditional financial market products, reducing the risk, liquidating collateral at 150%, and reserving loss insurance funds to the platform. With all those risk management components it is possible to
+The collateral ratio (C-Ratio) will be set to an optimal ratio of 400%. The reason why C-Ratio is lower than other competing projects is that the risk of Pynths' position in the protocol is hedged with traditional financial market products, reducing the risk, liquidating collateral at 150%, and reserving loss insurance funds to the platform. With all those risk management components it is possible to
 
-add more stability to the platform, which give users the opportunity to be exposed to more assets. As PERI's price moves, this collateral ratio \(C-Ratio\) also fluctuates. When the price of PERI rises, the increase value of the PERI can be used to generate additional pUSD, which can be exchanged to additional Pynths assets. Conversely, when it falls, some pUSD can be burned to increase the collateral ratio. Users who maintain collateral ratio above this optimal C-Ratio can claim the exchange fee reward and inflation reward according to the staking proportion.
+add more stability to the platform, which give users the opportunity to be exposed to more assets. As PERI's price moves, this collateral ratio (C-Ratio) also fluctuates. When the price of PERI rises, the increase value of the PERI can be used to generate additional pUSD, which can be exchanged to additional Pynths assets. Conversely, when it falls, some pUSD can be burned to increase the collateral ratio. Users who maintain collateral ratio above this optimal C-Ratio can claim the exchange fee reward and inflation reward according to the staking proportion.
 
 #### Pynths
 
-Pynth stands for PERI Synthetic Assets and is a synthetic asset of Forex, Indices, Commodities and Crypto Currency in traditional financial markets. The price moves according to the actual price of the underlying asset. You can call it Delta One derivatives, however since transactions are carried out by smart contracts within the blockchain network and all assets sits on my wallet, they are transparent, very convenient and highly reliable. Pynths products are USD, EUR, GBP for Forex, S&P 500, HANGSENG for Indices, Gold, Silver, Oil for Commodities, BTC, ETH, LTC and Inverse Crypto Currency for Crypto Currency.
+Pynth stands for PERI Synthetic Assets and is a synthetic asset of Forex, Indices, Commodities and Crypto Currency in traditional financial markets. The price moves according to the actual price of the underlying asset. You can call it Delta One derivatives, however since transactions are carried out by smart contracts within the blockchain network and all assets sits on my wallet, they are transparent, very convenient and highly reliable. Pynths products are USD, EUR, GBP for Forex, S\&P 500, HANGSENG for Indices, Gold, Silver, Oil for Commodities, BTC, ETH, LTC and Inverse Crypto Currency for Crypto Currency.
 
 #### Liquidity Pool
 
-PERI Liquidity Pool is a pool created in the process of PERI holders staking PERI and minting Pynth called pUSD. The pool acts as a liquidity provider, which is the counterparty when trading pUSD to pBTC or pEUR, for example. Therefore, it can be said that liquidity is infinite. In other words, there is no worry about lack of liquidity or slippage existing in traditional financial markets. However, if all users only have pBTC and the BTC price rises by 50%, the total debt also increases by 50%. In this case, the collateral pool, the staking pool has the opposite position, pBTC sell \(or inverse piBTC\), so the buy/sell ratio plays an important role in the overall collateral ratio of the system. PERI Finance will increase the stability of the system by reducing the risk of various methods such as position hedge in the on/off chain for the position imbalance of the system.
+PERI Liquidity Pool is a pool created in the process of PERI holders staking PERI and minting Pynth called pUSD. The pool acts as a liquidity provider, which is the counterparty when trading pUSD to pBTC or pEUR, for example. Therefore, it can be said that liquidity is infinite. In other words, there is no worry about lack of liquidity or slippage existing in traditional financial markets. However, if all users only have pBTC and the BTC price rises by 50%, the total debt also increases by 50%. In this case, the collateral pool, the staking pool has the opposite position, pBTC sell (or inverse piBTC), so the buy/sell ratio plays an important role in the overall collateral ratio of the system. PERI Finance will increase the stability of the system by reducing the risk of various methods such as position hedge in the on/off chain for the position imbalance of the system.
 
 ## PERI Exchange
 
@@ -68,7 +68,7 @@ PERI Liquidity Pool is a pool created in the process of PERI holders staking PER
 
 Pynths assets provide users with a way to buy or sell a variety of traditional financial assets without having an underlying asset. Users have the opportunity to easily and comfortably move their asset from one to another to make profits without going through any procedures or censorship mandatorily enforced in traditional financial systems.
 
-PERI Exchange is a Pynths\(synthetic assets\) derivative DEX without an order book. The dApp provides both leveraged and unleveraged products. Users are able to converting one Pynth to another without worrying about how deep the liquidity nor slippage because the debt pool smart contract backed by the staked collateral plays the role of liquidity provider. Users are also able to be benefited by taking short or long positions of Pynths with 20x leverage. The Pynth prices are provided by Oracle while Pynth perpetual contract prices are determined by virtual AMM.
+PERI Exchange is a Pynths(synthetic assets) derivative DEX without an order book. The dApp provides both leveraged and unleveraged products. Users are able to converting one Pynth to another without worrying about how deep the liquidity nor slippage because the debt pool smart contract backed by the staked collateral plays the role of liquidity provider. Users are also able to be benefited by taking short or long positions of Pynths with 20x leverage. The Pynth prices are provided by Oracle while Pynth perpetual contract prices are determined by virtual AMM.
 
 #### How to convert one Pynth to another
 
@@ -78,14 +78,14 @@ To converting Pynths, minting pUSD is the first step. By locking PERI or deposit
 
 When the value of your Pynths increases, you can exchange them for pUSD at any time to unlock the staked PERI or USDC as collateral. In this case, the following cases may occur.
 
-* When PERI's price rises, the collateral ratio also rises, in which you can generate additional pUSD up to the optimal C-ratio\(400%\). So you can get additional Pynths.
+* When PERI's price rises, the collateral ratio also rises, in which you can generate additional pUSD up to the optimal C-ratio(400%). So you can get additional Pynths.
 * When PERI's price falls, the collateral ratio also falls, in which pUSD must be burned up to the optimal C-ratio. Otherwise, you will not be able to claim any rewards.
 * When unlocked PERI staking rewords comes in, you can transfer the amount to other crypto exchange to sell it or you can mint pUSD to exchange to Pynths,.
 * When pUSD is still remained even if unlocked all staked PERI buing enough Pusd, you can exchange the profitable pUSD to ETH or PERI using LP pools such as Uniswap.
 
 #### What is perpetual contract?
 
-Perpetual contracts are one of the most popular derivative products in cryptocurrency space ever since pioneered by bitMex. Perpetual contracts allow traders to speculate on the future price of a given asset by buying \(going long\) or selling \(going short\) perpetual futures contracts. Unlike typical futures, perpetual contracts do not expire and remain effective until the trader closes their position. The price of perpetual contracts will often diverge from the price of underlying assets. These deviations signal sentiment on the exchange - if a majority of traders expect the underlying asset to increase in value over time, the price of the perpetual contract will likely exceed the spot price. Likewise, if most traders expect the price to fall, the price of the perpetual will be below the spot price.
+Perpetual contracts are one of the most popular derivative products in cryptocurrency space ever since pioneered by bitMex. Perpetual contracts allow traders to speculate on the future price of a given asset by buying (going long) or selling (going short) perpetual futures contracts. Unlike typical futures, perpetual contracts do not expire and remain effective until the trader closes their position. The price of perpetual contracts will often diverge from the price of underlying assets. These deviations signal sentiment on the exchange - if a majority of traders expect the underlying asset to increase in value over time, the price of the perpetual contract will likely exceed the spot price. Likewise, if most traders expect the price to fall, the price of the perpetual will be below the spot price.
 
 There are two mechanisms that moderate this process, and function to keep the perpetual contract
 
@@ -115,7 +115,7 @@ In addition, Cryptocurrency supports products such as pBTC and pETH, and inverse
 
 #### Rewards
 
-In order to create more stable PERI ecosystem by encouraging trading in PERI Exchange, it is designed to incentivize the stakers by rewarding 50% of the revenue distribution generated from PERI assets on pro-rata basis and the rest 50% is to reward to the stakers who participate in trading based on their contribution to total trading volume. The payment will be executed in PERI 50%, BTC or ETH 50%. This is to reward more exchange fees to holders who participated in staking through increasing Pynths trading volume. In addition, the stability of the system is improved by allowing only stakers who keep the collateral ratio above the optimum ratio \(400%\) to claim the exchange fees.
+In order to create more stable PERI ecosystem by encouraging trading in PERI Exchange, it is designed to incentivize the stakers by rewarding 50% of the revenue distribution generated from PERI assets on pro-rata basis and the rest 50% is to reward to the stakers who participate in trading based on their contribution to total trading volume. The payment will be executed in PERI 50%, BTC or ETH 50%. This is to reward more exchange fees to holders who participated in staking through increasing Pynths trading volume. In addition, the stability of the system is improved by allowing only stakers who keep the collateral ratio above the optimum ratio (400%) to claim the exchange fees.
 
 ## PERI Asset
 
@@ -135,7 +135,7 @@ PERI White Paper 14
 
 ## PERI DAO
 
-PERI tokens are also used for governance. We have created a PIP \(PERI Improvement Proposals\) system to collect community opinions, so that anyone can submit a PIP using 1PERI, and when adopted, the number of PERIs used for voting will be reflected in the system. The PERI used at this time will be returned.
+PERI tokens are also used for governance. We have created a PIP (PERI Improvement Proposals) system to collect community opinions, so that anyone can submit a PIP using 1PERI, and when adopted, the number of PERIs used for voting will be reflected in the system. The PERI used at this time will be returned.
 
 ## System Architecture
 
@@ -147,7 +147,7 @@ Currently, the majority of the activities in DeFi are found in one main chain, E
 
 #### OVM & Layer2 solution on Polkadot
 
-In order to effectively solve issues of existing DeFis on Ethereum such as too-much-to-trade GAS fee and front-running, Peri finance is applying Layer2 solution with OVM\(Optimistic Virtual Machine\) on Polkadot by harnessing WASM and Substrate. By leveraging Optimistic Rollups on Relaychain and Polkadot’s nature, it is possible to provide the Pynths issuance and exchange platform that supports enhanced scalability and Interoperability. Bringing most of the work to Layer2 with OVM reduces the cost and time of transactions significantly. Furthermore, Polkado will enable value transfers across variety of different blockchain networks when the ecosystem matures. Eventually, the platform is going to be more robust, stakers protected far better.
+In order to effectively solve issues of existing DeFis on Ethereum such as too-much-to-trade GAS fee and front-running, Peri finance is applying Layer2 solution with OVM(Optimistic Virtual Machine) on Polkadot by harnessing WASM and Substrate. By leveraging Optimistic Rollups on Relaychain and Polkadot’s nature, it is possible to provide the Pynths issuance and exchange platform that supports enhanced scalability and Interoperability. Bringing most of the work to Layer2 with OVM reduces the cost and time of transactions significantly. Furthermore, Polkado will enable value transfers across variety of different blockchain networks when the ecosystem matures. Eventually, the platform is going to be more robust, stakers protected far better.
 
 ![](../.gitbook/assets/9.jpeg)
 
@@ -171,23 +171,27 @@ Let’s take converting pUSD to Peth as an example. First, pUSD is burned to upd
 
 ![](../.gitbook/assets/10.jpeg)The perpetual contract is traded by collateralizing pUSD. Users can initiate trading Pynth perpetual contract with pUSD by selecting leverage and amount of pUSD as the margin. Here is how the trading goes.
 
-* * Robert specifies 1000 pUSD as the collateral and execute 100 pUSD as the margin to open a 10x leveraged long position.
-  * The smart contract locks the collateralized amount of pUSD and updates the asset price in the vAMM according to the margin amount, position direction \(long or short\), and the
+*
+  * Robert specifies 1000 pUSD as the collateral and execute 100 pUSD as the margin to open a 10x leveraged long position.
+  * The smart contract locks the collateralized amount of pUSD and updates the asset price in the vAMM according to the margin amount, position direction (long or short), and the
 
 amount of leverage.
 
-* * Assume we have 100 pETH/pUSD and 100,000 pUSD in our vAMM as its initial state.
+*
+  * Assume we have 100 pETH/pUSD and 100,000 pUSD in our vAMM as its initial state.
 
-The amount of pUSD in our vAMMs will become 101,000, the amount of pETH/pUSD will become 99.009901 \(100 \* 100,000 / 101,000\), which is calculated by the constant-product curve, and the position Robert opens is 0.990099 pETH\(100 - 99.009901\).
+The amount of pUSD in our vAMMs will become 101,000, the amount of pETH/pUSD will become 99.009901 (100 \* 100,000 / 101,000), which is calculated by the constant-product curve, and the position Robert opens is 0.990099 pETH(100 - 99.009901).
 
 ![](../.gitbook/assets/11.jpeg)
 
-* * ![](../.gitbook/assets/12.jpeg)Now, Irene also uses 100 pUSD to open a long position with 10x leverage. Her position size will be 0.970685 pETH \(99.009901-98.039216\) as calculated by the vAMM.
-  * After Irene’s action, Robet closes his position and realizes a profit of 19.80 pUSD \(102,000
+*
+  * ![](../.gitbook/assets/12.jpeg)Now, Irene also uses 100 pUSD to open a long position with 10x leverage. Her position size will be 0.970685 pETH (99.009901-98.039216) as calculated by the vAMM.
+  * After Irene’s action, Robet closes his position and realizes a profit of 19.80 pUSD (102,000
 
-![](../.gitbook/assets/13.jpeg)- 98.039216 \* 102,000 / \(98.039216 + 0.990099\) - 1,000\), which is calculated by vAMM with decreasing pUSD amount and pETH/pUSD. The smart contract sends 19.80 pUSD to Robert’s wallet.
+![](../.gitbook/assets/13.jpeg)- 98.039216 \* 102,000 / (98.039216 + 0.990099) - 1,000), which is calculated by vAMM with decreasing pUSD amount and pETH/pUSD. The smart contract sends 19.80 pUSD to Robert’s wallet.
 
-* * Consecutively, Irene closes her position too. She lost -19.80 pUSD \(100,980.2 - 99.0293147 \* 100,980.2 / \(99.0293147 + 0.970685\) - 1000\) after closing her position. The smart contract transfers 19.80 pUSD from locked amount of pUSD as the collateral in Irene’s wallet to the vault.
+*
+  * Consecutively, Irene closes her position too. She lost -19.80 pUSD (100,980.2 - 99.0293147 \* 100,980.2 / (99.0293147 + 0.970685) - 1000) after closing her position. The smart contract transfers 19.80 pUSD from locked amount of pUSD as the collateral in Irene’s wallet to the vault.
 
 ![](../.gitbook/assets/14.jpeg)
 
@@ -199,7 +203,7 @@ PERI Exchange let traders to use leverage up to 20x. Traders need to lock more a
 
 Periodic funding payments is the most common mechanism to do perpetual swaps. PERI Exchange follows FTX's method to calculate the funding payments, which is done according to the formula below:
 
-FundingPayment = PositionSize \* \(\(TWAP\_Perpetual - TWAP\_Pynth\) / 24\)
+FundingPayment = PositionSize \* ((TWAP\_Perpetual - TWAP\_Pynth) / 24)
 
 #### Fees
 
@@ -217,11 +221,11 @@ When Pynths are liquidated, they are converted to pUSD. In order to exit and unl
 
 In terms of perpetual contract, liquidation occurs when your position margin ratio falls to 4% or below. This can be changed by PERI.DAO. The margin ratio is calculated as below
 
-Margin ratio = \(Collateral + PnL\) / used notional margin \* 100
+Margin ratio = (Collateral + PnL) / used notional margin \* 100
 
 With the example case above, Irene’s margin ratio at the time of Robert’s closing his position is
 
-98.02% = \(1,000 + \(-19.80\)\) / \(100\*10\) \* 100
+98.02% = (1,000 + (-19.80)) / (100\*10) \* 100
 
 The liquidation executed by Liquidator, which is a bot. When liquidated, Liquidator earns 1.5% of the notional amount from remaining margin while the rest of no will be go to the protocol’s loss provision fund.
 
@@ -233,7 +237,7 @@ The high collateral rate is an issue that the project keeps trying to address. T
 
 #### Development Road Map
 
-Q1 2021 Launched on Ethereum Mainnet. 
+Q1 2021 Launched on Ethereum Mainnet.&#x20;
 
 Q2 2021 Launched staking on Parachain
 
@@ -249,7 +253,7 @@ Peri finance is building Pynths perpetual contract on the base of virtual AMM. T
 
 #### Asset Management
 
-Currently, we are managing assets through a trading system using a trading algorithm through the Arbitrage of Fiat Forex and Crypto Currency market. For more stable profits, we will develop M.L. \(Machine Learning\) to increase profits through market forecasting and capture arbitrage opportunities for various products into a system that utilizes more diverse big data to achieve a more stable and high profit distribution.
+Currently, we are managing assets through a trading system using a trading algorithm through the Arbitrage of Fiat Forex and Crypto Currency market. For more stable profits, we will develop M.L. (Machine Learning) to increase profits through market forecasting and capture arbitrage opportunities for various products into a system that utilizes more diverse big data to achieve a more stable and high profit distribution.
 
 #### PERIDAO
 
@@ -260,4 +264,3 @@ First of all, whoever PIP is to be submitted and the elected PIP will be decided
 ### Conclusion
 
 It is not easy for anyone to take risks and make profits by exposing themselves to various products. However, PERI Finance wants to make investments less costly, more transparent and easier for users by creating the most accessible decentralized synthetic derivative trading platform. Therefore, on the big proposition of decentralization of finance, the team will do our best to provide users with the best ways to multiplying their asset and to build the protocol always better for users. Our clients' asset growth comes first!
-

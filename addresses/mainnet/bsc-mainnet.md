@@ -2,9 +2,9 @@
 
 Peri Finance Staking Dapp Smart Contract Deployed in BSC MAINNET .
 
-### BSC MAINNET <a id="mainnet"></a>
+### BSC MAINNET <a href="mainnet" id="mainnet"></a>
 
-```text
+```
 All contracts deployed on "bsc" network:
 ╔══════════════════════════════════╤════════════════════════════════════════════╤════════════════════════════════════════════════════════════════════════╗
 ║ SafeDecimalMath                  │ 0xB8Aa8820da9F999Ba3b3dbB7F08f07Cc1c8Fa933 │ https: //bscscan.com/address/0xB8Aa8820da9F999Ba3b3dbB7F08f07Cc1c8Fa933 ║
@@ -117,4 +117,3 @@ All contracts deployed on "bsc" network:
 ╚══════════════════════════════════╧════════════════════════════════════════════╧════════════════════════════════════════════════════════════════════════╝
 
 ```
-
